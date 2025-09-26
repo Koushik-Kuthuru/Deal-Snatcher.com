@@ -1,0 +1,104 @@
+{
+    "category": "dad",
+    "title": "Gifts for Dad",
+    "description": "Perfect gifts for the man who has everything",
+    "heroColor": "from-blue-500 via-indigo-500 to-purple-500",
+    "products": [
+        {
+            "id": 1,
+            "name": "Leather Wallet Set",
+            "price": 7387,
+            "originalPrice": 9960,
+            "category": "accessories",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Leather+Wallet",
+            "affiliateLink": "https://amzn.to/dad-gift-1",
+            "youtubeVideo": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "description": "Premium leather wallet with money clip"
+        },
+        {
+            "id": 2,
+            "name": "Smart Watch",
+            "price": 16517,
+            "originalPrice": 20749,
+            "category": "tech",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Smart+Watch",
+            "affiliateLink": "https://amzn.to/dad-gift-1",
+            "youtubeVideo": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "description": "Advanced fitness tracking smartwatch"
+        },
+        {
+            "id": 3,
+            "name": "Golf Set",
+            "price": 24817,
+            "originalPrice": 33117,
+            "category": "sports",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Golf+Set",
+            "affiliateLink": "https://amzn.to/dad-gift-1",
+            "youtubeVideo": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "description": "Complete golf club set for beginners"
+        },
+        {
+            "id": 4,
+            "name": "Whiskey Gift Set",
+            "price": 75,
+            "originalPrice": 95,
+            "category": "food",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Whiskey+Set",
+            "affiliateLink": "https://amzn.to/dad-gift-1",
+            "youtubeVideo": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "description": "Premium whiskey with glasses"
+        },
+        {
+            "id": 5,
+            "name": "Wireless Headphones",
+            "price": 149,
+            "originalPrice": 180,
+            "category": "tech",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Headphones",
+            "affiliateLink": "https://amzn.to/dad-gift-1",
+            "youtubeVideo": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "description": "Noise-canceling wireless headphones"
+        },
+        {
+            "id": 6,
+            "name": "Tool Set",
+            "price": 89,
+            "originalPrice": 120,
+            "category": "tools",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Tool+Set",
+            "affiliateLink": "https://amzn.to/dad-gift-1",
+            "youtubeVideo": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "description": "Professional tool set for home projects"
+        },
+        {
+            "id": 7,
+            "name": "Coffee Maker",
+            "price": 199,
+            "originalPrice": 250,
+            "category": "kitchen",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Coffee+Maker",
+            "affiliateLink": "https://amzn.to/dad-gift-1",
+            "youtubeVideo": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "description": "Premium espresso machine"
+        },
+        {
+            "id": 8,
+            "name": "Fishing Gear",
+            "price": 125,
+            "originalPrice": 160,
+            "category": "outdoor",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Fishing+Gear",
+            "affiliateLink": "https://amzn.to/dad-gift-1",
+            "youtubeVideo": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "description": "Complete fishing rod and tackle set"
+        }
+    ]
+}

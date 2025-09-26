@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Guide - Deal Snatcher</title>
+    <meta name="description"
+        content="Find the perfect gifts for everyone in your life - men, women, moms, dads, brothers, sisters, boyfriends, girlfriends, and more!">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6381260263392114"
+        crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#fef2f2',
+                            100: '#fee2e2',
+                            200: '#fecaca',
+                            300: '#fca5a5',
+                            400: '#f87171',
+                            500: '#DC2626',
+                            600: '#B91C1C',
+                            700: '#991b1b',
+                            800: '#7f1d1d',
+                            900: '#450a0a'
+                        },
+                        secondary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e'
+                        },
+                        accent: {
+                            50: '#fefce8',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                            800: '#854d0e',
+                            900: '#713f12'
+                        },
+                        success: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors">
+    <!-- Header -->
+    <header class="bg-white dark:bg-gray-800 shadow-lg sticky top-0 z-50 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="/" class="flex items-center hover:opacity-80 transition-opacity">
+                    <img src="images/deal-snatcher-logo.png" alt="Deal Snatcher Logo" class="h-10 w-auto mr-3">
+                    <div>
+                        <h1 class="text-2xl font-bold text-primary-500 dark:text-primary-400">Deal Snatcher</h1>
+                    </div>
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <!-- Categories Dropdown -->
+                    <div class="relative group">
+                        <button
+                            class="text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors flex items-center">
+                            Categories
+                            <i class="fas fa-chevron-down ml-1 text-sm"></i>
+                        </button>
+                        <div
+                            class="absolute top-full left-0 mt-2 w-64 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <div class="py-2">
+                                <a href="index.html"
+                                    class="category-link block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                                    data-category="all">
+                                    <i class="fas fa-th-large mr-2"></i>All Products
+                                </a>
+                                <a href="index.html"
+                                    class="category-link block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                                    data-category="gadgets">
+                                    <i class="fas fa-mobile-alt mr-2"></i>Gadgets
+                                </a>
+                                <a href="index.html"
+                                    class="category-link block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                                    data-category="home">
+                                    <i class="fas fa-home mr-2"></i>Home & Living
+                                </a>
+                                <a href="index.html"
+                                    class="category-link block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                                    data-category="tech">
+                                    <i class="fas fa-laptop mr-2"></i>Tech
+                                </a>
+                                <a href="index.html"
+                                    class="category-link block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                                    data-category="outdoor">
+                                    <i class="fas fa-hiking mr-2"></i>Outdoor
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="gift-guide.html" class="text-primary-500 dark:text-primary-400 font-semibold">Gift
+                        Guide</a>
+                    <a href="about.html"
+                        class="text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">About</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <!-- Search Bar -->
+                    <div class="hidden md:block relative">
+                        <input type="text" id="navSearchInput" placeholder="Search products..."
+                            class="w-64 px-4 py-2 pl-10 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors">
+                        <i
+                            class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 dark:text-gray-500"></i>
+                    </div>
+                    <button id="mobileMenuToggle" class="md:hidden text-gray-700 dark:text-gray-300">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden bg-white dark:bg-gray-800 shadow-lg hidden">
+        <div class="px-4 py-2 space-y-1">
+            <!-- Mobile Search -->
+            <div class="border-b border-gray-200 dark:border-gray-700 pb-2 mb-2">
+                <div class="relative">
+                    <input type="text" id="mobileNavSearchInput" placeholder="Search products..."
+                        class="w-full px-4 py-2 pl-10 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors">
+                    <i
+                        class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 dark:text-gray-500"></i>
+                </div>
+            </div>
+            <!-- Mobile Categories -->
+            <div class="border-b border-gray-200 dark:border-gray-700 pb-2 mb-2">
+                <div class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2">Categories</div>
+                <a href="index.html"
+                    class="category-link block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+                    data-category="all">
+                    <i class="fas fa-th-large mr-2"></i>All Products
+                </a>
+                <a href="index.html"
+                    class="category-link block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+                    data-category="gadgets">
+                    <i class="fas fa-mobile-alt mr-2"></i>Gadgets
+                </a>
+                <a href="index.html"
+                    class="category-link block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+                    data-category="home">
+                    <i class="fas fa-home mr-2"></i>Home & Living
+                </a>
+                <a href="index.html"
+                    class="category-link block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+                    data-category="tech">
+                    <i class="fas fa-laptop mr-2"></i>Tech
+                </a>
+                <a href="index.html"
+                    class="category-link block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+                    data-category="outdoor">
+                    <i class="fas fa-hiking mr-2"></i>Outdoor
+                </a>
+            </div>
+            <a href="gift-guide.html" class="block px-3 py-2 text-primary-500 dark:text-primary-400 font-semibold">Gift
+                Guide</a>
+            <a href="about.html"
+                class="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">About</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section
+        class="bg-gradient-to-r from-primary-500 via-secondary-500 to-accent-500 dark:from-primary-600 dark:via-secondary-600 dark:to-accent-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4">🎁 Gift Guide</h2>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">Find the perfect gift for everyone in your life</p>
+        </div>
+    </section>
+
+    <!-- Gift Categories -->
+    <main class="max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="max-w-7xl mx-auto">
+            <!-- Family Members -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-8 text-center">👨‍👩‍👧‍👦 Family
+                    Members
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Mom -->
+                    <a href="mom-gifts.html"
+                        class="gift-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow cursor-pointer block">
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-pink-100 dark:bg-pink-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-heart text-pink-600 dark:text-pink-400 text-2xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">Mom</h4>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Jewelry, skincare, home decor, books</p>
+                            <div class="text-sm text-gray-500 dark:text-gray-500">Click to see gifts</div>
+                        </div>
+                    </a>
+
+                    <!-- Dad -->
+                    <a href="dad-gifts.html"
+                        class="gift-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow cursor-pointer block">
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-tools text-blue-600 dark:text-blue-400 text-2xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">Dad</h4>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Tools, gadgets, watches, outdoor gear</p>
+                            <div class="text-sm text-gray-500 dark:text-gray-500">Click to see gifts</div>
+                        </div>
+                    </a>
+
+                    <!-- Brother -->
+                    <a href="men-gifts.html"
+                        class="gift-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow cursor-pointer block">
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-gamepad text-green-600 dark:text-green-400 text-2xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">Brother</h4>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Gaming, tech, sports, accessories</p>
+                            <div class="text-sm text-gray-500 dark:text-gray-500">Click to see gifts</div>
+                        </div>
+                    </a>
+
+                    <!-- Sister -->
+                    <a href="women-gifts.html"
+                        class="gift-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow cursor-pointer block">
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-gem text-purple-600 dark:text-purple-400 text-2xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">Sister</h4>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Fashion, beauty, jewelry, lifestyle</p>
+                            <div class="text-sm text-gray-500 dark:text-gray-500">Click to see gifts</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Relationships -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-8 text-center">💕 Relationships</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Boyfriend -->
+                    <a href="men-gifts.html"
+                        class="gift-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow cursor-pointer block">
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-red-100 dark:bg-red-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-male text-red-600 dark:text-red-400 text-2xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">Boyfriend</h4>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Watches, cologne, tech, experiences</p>
+                            <div class="text-sm text-gray-500 dark:text-gray-500">Click to see gifts</div>
+                        </div>
+                    </a>
+
+                    <!-- Girlfriend -->
+                    <a href="women-gifts.html"
+                        class="gift-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow cursor-pointer block">
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-pink-100 dark:bg-pink-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-female text-pink-600 dark:text-pink-400 text-2xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">Girlfriend</h4>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Perfume, jewelry, fashion, spa items</p>
+                            <div class="text-sm text-gray-500 dark:text-gray-500">Click to see gifts</div>
+                        </div>
+                    </a>
+
+                    <!-- Best Friend Male -->
+                    <a href="best-friend-male-gifts.html"
+                        class="gift-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow cursor-pointer block">
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-yellow-100 dark:bg-yellow-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-male text-yellow-600 dark:text-yellow-400 text-2xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">Best Friend (Male)</h4>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Gaming, tech, sports, adventures</p>
+                            <div class="text-sm text-gray-500 dark:text-gray-500">Click to see gifts</div>
+                        </div>
+                    </a>
+
+                    <!-- Best Friend Female -->
+                    <a href="best-friend-female-gifts.html"
+                        class="gift-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow cursor-pointer block">
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-pink-100 dark:bg-pink-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-female text-pink-600 dark:text-pink-400 text-2xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">Best Friend (Female)
+                            </h4>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Spa, jewelry, beauty, experiences</p>
+                            <div class="text-sm text-gray-500 dark:text-gray-500">Click to see gifts</div>
+                        </div>
+                    </a>
+
+                    <!-- Partner Male -->
+                    <a href="partner-male-gifts.html"
+                        class="gift-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow cursor-pointer block">
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-red-100 dark:bg-red-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-male text-red-600 dark:text-red-400 text-2xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">Partner (Male)</h4>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Watches, cologne, tech, experiences</p>
+                            <div class="text-sm text-gray-500 dark:text-gray-500">Click to see gifts</div>
+                        </div>
+                    </a>
+
+                    <!-- Partner Female -->
+                    <a href="partner-female-gifts.html"
+                        class="gift-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow cursor-pointer block">
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-indigo-100 dark:bg-indigo-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-female text-indigo-600 dark:text-indigo-400 text-2xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">Partner (Female)</h4>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Jewelry, spa, fashion, luxury items</p>
+                            <div class="text-sm text-gray-500 dark:text-gray-500">Click to see gifts</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 dark:bg-gray-950 text-white py-12 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="images/deal-snatcher-logo.png" alt="Deal Snatcher" class="h-8 w-auto mr-3">
+                        <h3 class="text-xl font-bold">Deal Snatcher</h3>
+                    </div>
+                    <p class="text-gray-400">Discover the coolest products and gadgets from around the world.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Categories</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/?category=gadgets" class="hover:text-white transition-colors">Gadgets</a>
+                        </li>
+                        <li><a href="/?category=home" class="hover:text-white transition-colors">Home &
+                                Living</a></li>
+                        <li><a href="/?category=tech" class="hover:text-white transition-colors">Tech</a></li>
+                        <li><a href="/?category=outdoor" class="hover:text-white transition-colors">Outdoor</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact Us</a></li>
+                        <li><a href="faq.html" class="hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                    <!-- Theme Toggle -->
+                    <div class="flex items-center space-x-3">
+                        <span class="text-gray-400 text-sm">Theme:</span>
+                        <div class="relative">
+                            <input type="checkbox" id="themeToggle" class="sr-only">
+                            <label for="themeToggle" class="flex items-center cursor-pointer">
+                                <div class="relative">
+                                    <div
+                                        class="w-12 h-6 bg-gray-600 rounded-full shadow-inner transition-colors duration-300 ease-in-out">
+                                    </div>
+                                    <div
+                                        class="absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow transition-transform duration-300 ease-in-out transform translate-x-0">
+                                    </div>
+                                </div>
+                                <span class="ml-2 text-gray-400 text-sm">
+                                    <i id="themeIcon" class="fas fa-moon"></i>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Deal Snatcher. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Initialize AdSense -->
+    <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</body>
+
+</html>

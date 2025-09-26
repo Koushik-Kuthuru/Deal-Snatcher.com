@@ -1,0 +1,96 @@
+{
+    "category": "men",
+    "title": "Gifts for Men",
+    "description": "Cool gifts for the modern man",
+    "heroColor": "from-gray-600 via-blue-600 to-indigo-600",
+    "products": [
+        {
+            "id": 1,
+            "name": "Gaming Headset",
+            "price": 12367,
+            "originalPrice": 14940,
+            "category": "gaming",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Gaming+Headset",
+            "affiliateLink": "https://amzn.to/men-gift-1",
+            "description": "Professional gaming headset with mic"
+        },
+        {
+            "id": 2,
+            "name": "Mechanical Keyboard",
+            "price": 16517,
+            "originalPrice": 20749,
+            "category": "tech",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Mechanical+Keyboard",
+            "affiliateLink": "https://amzn.to/men-gift-1",
+            "description": "RGB mechanical gaming keyboard"
+        },
+        {
+            "id": 3,
+            "name": "Smartphone",
+            "price": 58017,
+            "originalPrice": 74617,
+            "category": "tech",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Smartphone",
+            "affiliateLink": "https://amzn.to/men-gift-1",
+            "description": "Latest flagship smartphone"
+        },
+        {
+            "id": 4,
+            "name": "Wireless Earbuds",
+            "price": 199,
+            "originalPrice": 250,
+            "category": "tech",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Wireless+Earbuds",
+            "affiliateLink": "https://amzn.to/men-gift-1",
+            "description": "Premium wireless earbuds"
+        },
+        {
+            "id": 5,
+            "name": "Gaming Mouse",
+            "price": 89,
+            "originalPrice": 120,
+            "category": "gaming",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Gaming+Mouse",
+            "affiliateLink": "https://amzn.to/men-gift-1",
+            "description": "High-precision gaming mouse"
+        },
+        {
+            "id": 6,
+            "name": "Smart Watch",
+            "price": 299,
+            "originalPrice": 399,
+            "category": "tech",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Smart+Watch",
+            "affiliateLink": "https://amzn.to/men-gift-1",
+            "description": "Advanced smartwatch with health tracking"
+        },
+        {
+            "id": 7,
+            "name": "Bluetooth Speaker",
+            "price": 125,
+            "originalPrice": 160,
+            "category": "tech",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Bluetooth+Speaker",
+            "affiliateLink": "https://amzn.to/men-gift-1",
+            "description": "Portable wireless speaker"
+        },
+        {
+            "id": 8,
+            "name": "Gaming Console",
+            "price": 499,
+            "originalPrice": 599,
+            "category": "gaming",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Gaming+Console",
+            "affiliateLink": "https://amzn.to/men-gift-1",
+            "description": "Latest gaming console"
+        }
+    ]
+}

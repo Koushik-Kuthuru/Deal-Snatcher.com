@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deal Snatcher - Cool Products & Gadgets</title>
+    <meta name="description"
+        content="Discover amazing products, cool gadgets, and unique items at Deal Snatcher. Find the best deals on tech, home, outdoor, and lifestyle products.">
+    <meta name="keywords" content="deals, gadgets, products, tech, home, outdoor, shopping, discounts">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6381260263392114"
+        crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#fef2f2',
+                            100: '#fee2e2',
+                            200: '#fecaca',
+                            300: '#fca5a5',
+                            400: '#f87171',
+                            500: '#DC2626',
+                            600: '#B91C1C',
+                            700: '#991b1b',
+                            800: '#7f1d1d',
+                            900: '#450a0a'
+                        },
+                        secondary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e'
+                        },
+                        accent: {
+                            50: '#fefce8',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                            800: '#854d0e',
+                            900: '#713f12'
+                        },
+                        success: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d'
+                        },
+                        logo: {
+                            red: '#DC2626',
+                            darkred: '#B91C1C',
+                            lightred: '#FEE2E2',
+                            blue: '#0ea5e9',
+                            yellow: '#eab308',
+                            green: '#22c55e'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors">
+    <!-- Header -->
+    <header class="bg-white dark:bg-gray-800 shadow-lg sticky top-0 z-50 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="/" class="flex items-center hover:opacity-80 transition-opacity">
+                    <img src="images/deal-snatcher-logo.png" alt="Deal Snatcher Logo" class="h-10 w-auto mr-3">
+                    <div>
+                        <h1 class="text-2xl font-bold text-primary-500 dark:text-primary-400">Deal Snatcher</h1>
+                    </div>
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <!-- Categories Dropdown -->
+                    <div class="relative group">
+                        <button
+                            class="text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors flex items-center">
+                            Categories
+                            <i class="fas fa-chevron-down ml-1 text-sm"></i>
+                        </button>
+                        <div
+                            class="absolute top-full left-0 mt-2 w-64 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <div class="py-2">
+                                <a href="#"
+                                    class="category-link block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                                    data-category="all">
+                                    <i class="fas fa-th-large mr-2"></i>All Products
+                                </a>
+                                <a href="#"
+                                    class="category-link block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                                    data-category="gadgets">
+                                    <i class="fas fa-mobile-alt mr-2"></i>Gadgets
+                                </a>
+                                <a href="#"
+                                    class="category-link block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                                    data-category="home">
+                                    <i class="fas fa-home mr-2"></i>Home & Living
+                                </a>
+                                <a href="#"
+                                    class="category-link block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                                    data-category="tech">
+                                    <i class="fas fa-laptop mr-2"></i>Tech
+                                </a>
+                                <a href="#"
+                                    class="category-link block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                                    data-category="outdoor">
+                                    <i class="fas fa-hiking mr-2"></i>Outdoor
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="gift-guide.html"
+                        class="text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">Gift
+                        Guide</a>
+                    <a href="about.html"
+                        class="text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">About</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <!-- Search Bar -->
+                    <div class="hidden md:block relative">
+                        <input type="text" id="navSearchInput" placeholder="Search products..."
+                            class="w-64 px-4 py-2 pl-10 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors">
+                        <i
+                            class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 dark:text-gray-500"></i>
+                    </div>
+                    <button id="mobileMenuToggle" class="md:hidden text-gray-700 dark:text-gray-300">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden bg-white dark:bg-gray-800 shadow-lg hidden">
+        <div class="px-4 py-2 space-y-1">
+            <!-- Mobile Search -->
+            <div class="border-b border-gray-200 dark:border-gray-700 pb-2 mb-2">
+                <div class="relative">
+                    <input type="text" id="mobileNavSearchInput" placeholder="Search products..."
+                        class="w-full px-4 py-2 pl-10 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors">
+                    <i
+                        class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 dark:text-gray-500"></i>
+                </div>
+            </div>
+            <!-- Mobile Categories -->
+            <div class="border-b border-gray-200 dark:border-gray-700 pb-2 mb-2">
+                <div class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2">Categories</div>
+                <a href="#"
+                    class="category-link block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+                    data-category="all">
+                    <i class="fas fa-th-large mr-2"></i>All Products
+                </a>
+                <a href="#"
+                    class="category-link block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+                    data-category="gadgets">
+                    <i class="fas fa-mobile-alt mr-2"></i>Gadgets
+                </a>
+                <a href="#"
+                    class="category-link block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+                    data-category="home">
+                    <i class="fas fa-home mr-2"></i>Home & Living
+                </a>
+                <a href="#"
+                    class="category-link block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+                    data-category="tech">
+                    <i class="fas fa-laptop mr-2"></i>Tech
+                </a>
+                <a href="#"
+                    class="category-link block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+                    data-category="outdoor">
+                    <i class="fas fa-hiking mr-2"></i>Outdoor
+                </a>
+            </div>
+            <a href="gift-guide.html"
+                class="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">Gift
+                Guide</a>
+            <a href="about.html"
+                class="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">About</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section
+        class="bg-gradient-to-r from-primary-500 via-secondary-500 to-accent-500 dark:from-primary-600 dark:via-secondary-600 dark:to-accent-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4">Discover Amazing Products</h2>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">Find the coolest gadgets, unique items, and must-have
+                products</p>
+            <div class="max-w-2xl mx-auto">
+                <div class="relative">
+                    <input type="text" id="searchInput" placeholder="Search for products..."
+                        class="w-full px-6 py-4 rounded-full text-gray-800 text-lg focus:outline-none focus:ring-4 focus:ring-white">
+                    <button
+                        class="absolute right-2 top-2 bg-white text-primary px-6 py-2 rounded-full hover:bg-gray-100 transition-colors">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="bg-white dark:bg-gray-800 py-6 shadow-sm transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap gap-4 items-center justify-between">
+                <div class="flex flex-wrap gap-2">
+                    <button class="filter-btn active bg-primary-500 text-white px-4 py-2 rounded-full"
+                        data-category="all">
+                        All Products
+                    </button>
+                    <button
+                        class="filter-btn bg-secondary-100 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-400 px-4 py-2 rounded-full hover:bg-secondary-200 dark:hover:bg-secondary-800 border border-secondary-200 dark:border-secondary-700"
+                        data-category="gadgets">
+                        Gadgets
+                    </button>
+                    <button
+                        class="filter-btn bg-accent-100 dark:bg-accent-900 text-accent-600 dark:text-accent-400 px-4 py-2 rounded-full hover:bg-accent-200 dark:hover:bg-accent-800 border border-accent-200 dark:border-accent-700"
+                        data-category="home">
+                        Home & Living
+                    </button>
+                    <button
+                        class="filter-btn bg-success-100 dark:bg-success-900 text-success-600 dark:text-success-400 px-4 py-2 rounded-full hover:bg-success-200 dark:hover:bg-success-800 border border-success-200 dark:border-success-700"
+                        data-category="tech">
+                        Tech
+                    </button>
+                    <button
+                        class="filter-btn bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-400 px-4 py-2 rounded-full hover:bg-primary-200 dark:hover:bg-primary-800 border border-primary-200 dark:border-primary-700"
+                        data-category="outdoor">
+                        Outdoor
+                    </button>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <span class="text-gray-600 dark:text-gray-400">Sort by:</span>
+                    <select id="sortSelect"
+                        class="border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary-500">
+                        <option value="newest">Newest</option>
+                        <option value="popular">Most Popular</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <main class="max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="max-w-7xl mx-auto">
+            <div id="productsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button id="loadMoreBtn"
+                    class="bg-primary-500 text-white px-8 py-3 rounded-lg hover:bg-primary-600 transition-colors shadow-lg hover:shadow-xl">
+                    Load More Products
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div
+                class="bg-white dark:bg-gray-800 rounded-lg max-w-6xl w-full max-h-[90vh] overflow-y-auto transition-colors">
+                <div class="flex flex-col lg:flex-row">
+                    <!-- Left Side - Images and Video -->
+                    <div class="w-full lg:w-1/2 p-6">
+                        <!-- Main Image -->
+                        <div class="mb-4">
+                            <img id="modalMainImage" src="" alt="" class="w-full h-96 object-cover rounded-lg">
+                        </div>
+
+                        <!-- Image Thumbnails -->
+                        <div id="imageThumbnails" class="flex space-x-2 mb-4 overflow-x-auto">
+                            <!-- Thumbnails will be dynamically added here -->
+                        </div>
+
+                        <!-- YouTube Video -->
+                        <div id="youtubeSection" class="hidden">
+                            <h4 class="text-lg font-semibold mb-2">Product Video</h4>
+                            <div class="relative w-full h-64 bg-gray-200 rounded-lg overflow-hidden">
+                                <iframe id="youtubeVideo" width="100%" height="100%" frameborder="0"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side - Product Info -->
+                    <div class="w-full lg:w-1/2 p-6">
+                        <button id="closeModal"
+                            class="float-right text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200">
+                            <i class="fas fa-times text-xl"></i>
+                        </button>
+                        <h3 id="modalTitle" class="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100"></h3>
+                        <p id="modalDescription" class="text-gray-600 dark:text-gray-400 mb-4"></p>
+                        <div class="flex items-center mb-4">
+                            <span id="modalPrice"
+                                class="text-3xl font-bold text-primary-500 dark:text-primary-400"></span>
+                            <span id="modalOriginalPrice"
+                                class="text-lg text-gray-500 dark:text-gray-400 line-through ml-2"></span>
+                        </div>
+                        <div class="mb-4">
+                            <span id="modalBrand"
+                                class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-2 py-1 rounded text-sm"></span>
+                        </div>
+                        <a id="buyNowBtn" href="#" target="_blank"
+                            class="w-full bg-primary-500 text-white py-3 rounded-lg hover:bg-primary-600 transition-colors mb-4 inline-block text-center shadow-lg hover:shadow-xl">
+                            <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                        </a>
+                        <button id="watchVideoBtn"
+                            class="w-full border border-primary-500 text-primary-500 dark:text-primary-400 py-3 rounded-lg hover:bg-primary-100 dark:hover:bg-primary-900 transition-colors hidden">
+                            <i class="fab fa-youtube mr-2"></i>Watch Video
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 dark:bg-gray-950 text-white py-12 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="images/deal-snatcher-logo.png" alt="Deal Snatcher" class="h-8 w-auto mr-3">
+                        <h3 class="text-xl font-bold">Deal Snatcher</h3>
+                    </div>
+                    <p class="text-gray-400">Discover the coolest products and gadgets from around the world.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Categories</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Gadgets</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Home & Living</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Tech</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Outdoor</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact Us</a></li>
+                        <li><a href="faq.html" class="hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                    <!-- Theme Toggle -->
+                    <div class="flex items-center space-x-3">
+                        <span class="text-gray-400 text-sm">Theme:</span>
+                        <div class="relative">
+                            <input type="checkbox" id="themeToggle" class="sr-only">
+                            <label for="themeToggle" class="flex items-center cursor-pointer">
+                                <div class="relative">
+                                    <div
+                                        class="w-12 h-6 bg-gray-600 rounded-full shadow-inner transition-colors duration-300 ease-in-out">
+                                    </div>
+                                    <div
+                                        class="absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow transition-transform duration-300 ease-in-out transform translate-x-0">
+                                    </div>
+                                </div>
+                                <span class="ml-2 text-gray-400 text-sm">
+                                    <i id="themeIcon" class="fas fa-moon"></i>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Deal Snatcher. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Initialize AdSense -->
+    <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</body>
+
+</html>

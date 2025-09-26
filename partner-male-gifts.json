@@ -1,0 +1,96 @@
+{
+    "category": "partner-male",
+    "title": "Gifts for Male Partner",
+    "description": "Romantic gifts and experiences for him",
+    "heroColor": "from-red-500 via-purple-500 to-indigo-500",
+    "products": [
+        {
+            "id": 1,
+            "name": "Luxury Watch",
+            "price": 49717,
+            "originalPrice": 66317,
+            "category": "watches",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Luxury+Watch",
+            "affiliateLink": "https://amzn.to/partner-male-1",
+            "description": "Premium luxury timepiece"
+        },
+        {
+            "id": 2,
+            "name": "Romantic Dinner Experience",
+            "price": 299,
+            "originalPrice": 399,
+            "category": "romantic",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Romantic+Dinner",
+            "affiliateLink": "https://amzn.to/partner-male-1",
+            "description": "Intimate romantic dinner for two"
+        },
+        {
+            "id": 3,
+            "name": "Premium Cologne Set",
+            "price": 199,
+            "originalPrice": 250,
+            "category": "fragrance",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Premium+Cologne",
+            "affiliateLink": "https://amzn.to/partner-male-1",
+            "description": "Luxury men's cologne collection"
+        },
+        {
+            "id": 4,
+            "name": "Weekend Getaway",
+            "price": 799,
+            "originalPrice": 999,
+            "category": "travel",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Weekend+Getaway",
+            "affiliateLink": "https://amzn.to/partner-male-1",
+            "description": "Romantic weekend escape"
+        },
+        {
+            "id": 5,
+            "name": "Personalized Gift",
+            "price": 149,
+            "originalPrice": 199,
+            "category": "personalized",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Personalized+Gift",
+            "affiliateLink": "https://amzn.to/partner-male-1",
+            "description": "Custom personalized gift with your names"
+        },
+        {
+            "id": 6,
+            "name": "Tech Gadget",
+            "price": 399,
+            "originalPrice": 499,
+            "category": "tech",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Tech+Gadget",
+            "affiliateLink": "https://amzn.to/partner-male-1",
+            "description": "Latest tech gadget he'll love"
+        },
+        {
+            "id": 7,
+            "name": "Adventure Experience",
+            "price": 249,
+            "originalPrice": 299,
+            "category": "experiences",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Adventure+Experience",
+            "affiliateLink": "https://amzn.to/partner-male-1",
+            "description": "Exciting adventure experience together"
+        },
+        {
+            "id": 8,
+            "name": "Luxury Accessories",
+            "price": 199,
+            "originalPrice": 250,
+            "category": "accessories",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Luxury+Accessories",
+            "affiliateLink": "https://amzn.to/partner-male-1",
+            "description": "Premium leather accessories set"
+        }
+    ]
+}

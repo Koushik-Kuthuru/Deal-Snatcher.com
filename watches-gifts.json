@@ -1,0 +1,96 @@
+{
+    "category": "watches",
+    "title": "Luxury Watches",
+    "description": "Timeless timepieces for every occasion",
+    "heroColor": "from-amber-500 via-yellow-500 to-orange-500",
+    "products": [
+        {
+            "id": 1,
+            "name": "Classic Gold Watch",
+            "price": 299,
+            "originalPrice": 399,
+            "category": "luxury",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Gold+Watch",
+            "affiliateLink": "https://amzn.to/watches-gift-1",
+            "description": "Elegant gold-plated wristwatch"
+        },
+        {
+            "id": 2,
+            "name": "Sports Watch",
+            "price": 16517,
+            "originalPrice": 20749,
+            "category": "sports",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Sports+Watch",
+            "affiliateLink": "https://amzn.to/watches-gift-1",
+            "description": "Waterproof sports watch with GPS"
+        },
+        {
+            "id": 3,
+            "name": "Smart Watch",
+            "price": 249,
+            "originalPrice": 299,
+            "category": "smart",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Smart+Watch",
+            "affiliateLink": "https://amzn.to/watches-gift-1",
+            "description": "Advanced smartwatch with health tracking"
+        },
+        {
+            "id": 4,
+            "name": "Diamond Watch",
+            "price": 599,
+            "originalPrice": 799,
+            "category": "luxury",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Diamond+Watch",
+            "affiliateLink": "https://amzn.to/watches-gift-1",
+            "description": "Luxury diamond-encrusted watch"
+        },
+        {
+            "id": 5,
+            "name": "Leather Strap Watch",
+            "price": 149,
+            "originalPrice": 180,
+            "category": "classic",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Leather+Watch",
+            "affiliateLink": "https://amzn.to/watches-gift-1",
+            "description": "Classic leather strap timepiece"
+        },
+        {
+            "id": 6,
+            "name": "Chronograph Watch",
+            "price": 399,
+            "originalPrice": 499,
+            "category": "luxury",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Chronograph+Watch",
+            "affiliateLink": "https://amzn.to/watches-gift-1",
+            "description": "Professional chronograph watch"
+        },
+        {
+            "id": 7,
+            "name": "Fitness Watch",
+            "price": 179,
+            "originalPrice": 220,
+            "category": "sports",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Fitness+Watch",
+            "affiliateLink": "https://amzn.to/watches-gift-1",
+            "description": "Advanced fitness tracking watch"
+        },
+        {
+            "id": 8,
+            "name": "Vintage Watch",
+            "price": 249,
+            "originalPrice": 299,
+            "category": "vintage",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Vintage+Watch",
+            "affiliateLink": "https://amzn.to/watches-gift-1",
+            "description": "Retro-style vintage watch"
+        }
+    ]
+}

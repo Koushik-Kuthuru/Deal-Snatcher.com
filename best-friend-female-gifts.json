@@ -1,0 +1,96 @@
+{
+    "category": "best-friend-female",
+    "title": "Gifts for Female Best Friend",
+    "description": "Thoughtful gifts for your bestie",
+    "heroColor": "from-pink-500 via-purple-500 to-indigo-500",
+    "products": [
+        {
+            "id": 1,
+            "name": "Spa Day Package",
+            "price": 16517,
+            "originalPrice": 20749,
+            "category": "spa",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Spa+Day+Package",
+            "affiliateLink": "https://amzn.to/best-friend-female-1",
+            "description": "Relaxing spa day for two best friends"
+        },
+        {
+            "id": 2,
+            "name": "Matching Jewelry Set",
+            "price": 89,
+            "originalPrice": 120,
+            "category": "jewelry",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Matching+Jewelry",
+            "affiliateLink": "https://amzn.to/best-friend-female-1",
+            "description": "Beautiful matching jewelry for best friends"
+        },
+        {
+            "id": 3,
+            "name": "Photo Memory Book",
+            "price": 55,
+            "originalPrice": 75,
+            "category": "personalized",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Photo+Memory+Book",
+            "affiliateLink": "https://amzn.to/best-friend-female-1",
+            "description": "Custom photo book of your memories together"
+        },
+        {
+            "id": 4,
+            "name": "Beauty Gift Set",
+            "price": 125,
+            "originalPrice": 160,
+            "category": "beauty",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Beauty+Gift+Set",
+            "affiliateLink": "https://amzn.to/best-friend-female-1",
+            "description": "Luxury beauty and skincare collection"
+        },
+        {
+            "id": 5,
+            "name": "Wine Tasting Experience",
+            "price": 149,
+            "originalPrice": 199,
+            "category": "experiences",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Wine+Tasting",
+            "affiliateLink": "https://amzn.to/best-friend-female-1",
+            "description": "Fun wine tasting experience for two"
+        },
+        {
+            "id": 6,
+            "name": "Fashion Accessories",
+            "price": 75,
+            "originalPrice": 95,
+            "category": "fashion",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Fashion+Accessories",
+            "affiliateLink": "https://amzn.to/best-friend-female-1",
+            "description": "Trendy fashion accessories and bags"
+        },
+        {
+            "id": 7,
+            "name": "Cooking Class",
+            "price": 199,
+            "originalPrice": 250,
+            "category": "experiences",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Cooking+Class",
+            "affiliateLink": "https://amzn.to/best-friend-female-1",
+            "description": "Fun cooking class experience together"
+        },
+        {
+            "id": 8,
+            "name": "Perfume Collection",
+            "price": 149,
+            "originalPrice": 199,
+            "category": "perfume",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Perfume+Collection",
+            "affiliateLink": "https://amzn.to/best-friend-female-1",
+            "description": "Beautiful perfume gift set"
+        }
+    ]
+}

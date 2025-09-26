@@ -1,0 +1,96 @@
+{
+    "category": "best-friend-male",
+    "title": "Gifts for Male Best Friend",
+    "description": "Fun gadgets and experiences for your best buddy",
+    "heroColor": "from-green-500 via-blue-500 to-purple-500",
+    "products": [
+        {
+            "id": 1,
+            "name": "Gaming Headset",
+            "price": 149,
+            "originalPrice": 180,
+            "category": "gaming",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Gaming+Headset",
+            "affiliateLink": "https://amzn.to/best-friend-male-1",
+            "description": "Professional gaming headset with mic"
+        },
+        {
+            "id": 2,
+            "name": "Beer Making Kit",
+            "price": 7387,
+            "originalPrice": 9960,
+            "category": "hobbies",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Beer+Making+Kit",
+            "affiliateLink": "https://amzn.to/best-friend-male-1",
+            "description": "Complete home beer brewing kit"
+        },
+        {
+            "id": 3,
+            "name": "Adventure Experience",
+            "price": 199,
+            "originalPrice": 250,
+            "category": "experiences",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Adventure+Experience",
+            "affiliateLink": "https://amzn.to/best-friend-male-1",
+            "description": "Exciting outdoor adventure experience"
+        },
+        {
+            "id": 4,
+            "name": "Tech Gadget",
+            "price": 299,
+            "originalPrice": 399,
+            "category": "tech",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Tech+Gadget",
+            "affiliateLink": "https://amzn.to/best-friend-male-1",
+            "description": "Latest tech gadget for tech enthusiasts"
+        },
+        {
+            "id": 5,
+            "name": "Sports Equipment",
+            "price": 125,
+            "originalPrice": 160,
+            "category": "sports",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Sports+Equipment",
+            "affiliateLink": "https://amzn.to/best-friend-male-1",
+            "description": "High-quality sports equipment"
+        },
+        {
+            "id": 6,
+            "name": "Concert Tickets",
+            "price": 199,
+            "originalPrice": 250,
+            "category": "entertainment",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Concert+Tickets",
+            "affiliateLink": "https://amzn.to/best-friend-male-1",
+            "description": "Tickets to their favorite band or artist"
+        },
+        {
+            "id": 7,
+            "name": "Tool Set",
+            "price": 89,
+            "originalPrice": 120,
+            "category": "tools",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Tool+Set",
+            "affiliateLink": "https://amzn.to/best-friend-male-1",
+            "description": "Professional tool set for DIY projects"
+        },
+        {
+            "id": 8,
+            "name": "Gaming Accessories",
+            "price": 75,
+            "originalPrice": 95,
+            "category": "gaming",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Gaming+Accessories",
+            "affiliateLink": "https://amzn.to/best-friend-male-1",
+            "description": "Gaming mouse, keyboard, and accessories"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "id": 13,
+    "title": "Smart Home Security Camera",
+    "description": "1080p HD security camera with night vision, motion detection, and mobile app control. Perfect for home monitoring.",
+    "price": 79.99,
+    "originalPrice": 119.99,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
+    "images": [
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop"
+    ],
+    "youtubeVideo": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "affiliateLink": "https://amazon.com/security-camera",
+    "category": "home",
+    "rating": 4.6,
+    "reviews": 156,
+    "brand": "SecureCam",
+    "availability": "in-stock"
+}

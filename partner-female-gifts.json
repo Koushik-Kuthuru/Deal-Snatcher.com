@@ -1,0 +1,96 @@
+{
+    "category": "partner-female",
+    "title": "Gifts for Female Partner",
+    "description": "Romantic gifts and experiences for her",
+    "heroColor": "from-red-500 via-pink-500 to-purple-500",
+    "products": [
+        {
+            "id": 1,
+            "name": "Diamond Jewelry Set",
+            "price": 74617,
+            "originalPrice": 99517,
+            "category": "jewelry",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Diamond+Jewelry+Set",
+            "affiliateLink": "https://amzn.to/partner-female-1",
+            "description": "Stunning diamond necklace and earrings set"
+        },
+        {
+            "id": 2,
+            "name": "Romantic Spa Retreat",
+            "price": 499,
+            "originalPrice": 699,
+            "category": "spa",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Romantic+Spa+Retreat",
+            "affiliateLink": "https://amzn.to/partner-female-1",
+            "description": "Luxury spa retreat for couples"
+        },
+        {
+            "id": 3,
+            "name": "Designer Handbag",
+            "price": 599,
+            "originalPrice": 799,
+            "category": "fashion",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Designer+Handbag",
+            "affiliateLink": "https://amzn.to/partner-female-1",
+            "description": "Luxury designer handbag"
+        },
+        {
+            "id": 4,
+            "name": "Romantic Getaway",
+            "price": 999,
+            "originalPrice": 1299,
+            "category": "travel",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Romantic+Getaway",
+            "affiliateLink": "https://amzn.to/partner-female-1",
+            "description": "Dream romantic vacation"
+        },
+        {
+            "id": 5,
+            "name": "Luxury Perfume Set",
+            "price": 299,
+            "originalPrice": 399,
+            "category": "perfume",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Luxury+Perfume+Set",
+            "affiliateLink": "https://amzn.to/partner-female-1",
+            "description": "Exclusive luxury perfume collection"
+        },
+        {
+            "id": 6,
+            "name": "Personalized Love Gift",
+            "price": 199,
+            "originalPrice": 250,
+            "category": "personalized",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Personalized+Love+Gift",
+            "affiliateLink": "https://amzn.to/partner-female-1",
+            "description": "Custom romantic personalized gift"
+        },
+        {
+            "id": 7,
+            "name": "Fine Dining Experience",
+            "price": 399,
+            "originalPrice": 499,
+            "category": "romantic",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Fine+Dining+Experience",
+            "affiliateLink": "https://amzn.to/partner-female-1",
+            "description": "Exclusive fine dining experience"
+        },
+        {
+            "id": 8,
+            "name": "Luxury Skincare Set",
+            "price": 249,
+            "originalPrice": 299,
+            "category": "beauty",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Luxury+Skincare+Set",
+            "affiliateLink": "https://amzn.to/partner-female-1",
+            "description": "Premium skincare collection"
+        }
+    ]
+}

@@ -1,0 +1,96 @@
+{
+    "category": "women",
+    "title": "Gifts for Women",
+    "description": "Thoughtful gifts she'll absolutely love",
+    "heroColor": "from-purple-500 via-pink-500 to-rose-500",
+    "products": [
+        {
+            "id": 1,
+            "name": "Designer Handbag",
+            "price": 24817,
+            "originalPrice": 33117,
+            "category": "fashion",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Designer+Bag",
+            "affiliateLink": "https://amzn.to/women-gift-1",
+            "description": "Luxury designer handbag"
+        },
+        {
+            "id": 2,
+            "name": "Diamond Earrings",
+            "price": 16517,
+            "originalPrice": 20749,
+            "category": "jewelry",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Diamond+Earrings",
+            "affiliateLink": "https://amzn.to/women-gift-1",
+            "description": "Beautiful diamond stud earrings"
+        },
+        {
+            "id": 3,
+            "name": "Spa Gift Set",
+            "price": 7387,
+            "originalPrice": 9960,
+            "category": "beauty",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Spa+Set",
+            "affiliateLink": "https://amzn.to/women-gift-1",
+            "description": "Luxury spa treatment set"
+        },
+        {
+            "id": 4,
+            "name": "Perfume Collection",
+            "price": 125,
+            "originalPrice": 160,
+            "category": "beauty",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Perfume+Set",
+            "affiliateLink": "https://amzn.to/women-gift-1",
+            "description": "Premium perfume gift set"
+        },
+        {
+            "id": 5,
+            "name": "Silk Scarf",
+            "price": 65,
+            "originalPrice": 85,
+            "category": "fashion",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Silk+Scarf",
+            "affiliateLink": "https://amzn.to/women-gift-1",
+            "description": "Elegant silk scarf"
+        },
+        {
+            "id": 6,
+            "name": "Skincare Set",
+            "price": 149,
+            "originalPrice": 180,
+            "category": "beauty",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Skincare+Set",
+            "affiliateLink": "https://amzn.to/women-gift-1",
+            "description": "Complete anti-aging skincare routine"
+        },
+        {
+            "id": 7,
+            "name": "Gold Necklace",
+            "price": 199,
+            "originalPrice": 250,
+            "category": "jewelry",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Gold+Necklace",
+            "affiliateLink": "https://amzn.to/women-gift-1",
+            "description": "Delicate gold chain necklace"
+        },
+        {
+            "id": 8,
+            "name": "Fitness Tracker",
+            "price": 199,
+            "originalPrice": 250,
+            "category": "tech",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Fitness+Tracker",
+            "affiliateLink": "https://amzn.to/women-gift-1",
+            "description": "Advanced fitness tracking watch"
+        }
+    ]
+}

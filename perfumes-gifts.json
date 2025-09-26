@@ -1,0 +1,96 @@
+{
+    "category": "perfumes",
+    "title": "Luxury Perfumes",
+    "description": "Signature scents for every personality",
+    "heroColor": "from-purple-500 via-pink-500 to-red-500",
+    "products": [
+        {
+            "id": 1,
+            "name": "Men's Cologne Set",
+            "price": 89,
+            "originalPrice": 120,
+            "category": "men",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Mens+Cologne",
+            "affiliateLink": "https://amzn.to/perfumes-gift-1",
+            "description": "Premium men's cologne collection"
+        },
+        {
+            "id": 2,
+            "name": "Women's Perfume Set",
+            "price": 10375,
+            "originalPrice": 13280,
+            "category": "women",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Womens+Perfume",
+            "affiliateLink": "https://amzn.to/perfumes-gift-1",
+            "description": "Elegant women's perfume collection"
+        },
+        {
+            "id": 3,
+            "name": "Unisex Fragrance",
+            "price": 8217,
+            "originalPrice": 10787,
+            "category": "unisex",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Unisex+Fragrance",
+            "affiliateLink": "https://amzn.to/perfumes-gift-1",
+            "description": "Versatile unisex fragrance"
+        },
+        {
+            "id": 4,
+            "name": "Luxury Perfume",
+            "price": 199,
+            "originalPrice": 250,
+            "category": "luxury",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Luxury+Perfume",
+            "affiliateLink": "https://amzn.to/perfumes-gift-1",
+            "description": "Exclusive luxury perfume"
+        },
+        {
+            "id": 5,
+            "name": "Summer Fragrance",
+            "price": 75,
+            "originalPrice": 95,
+            "category": "seasonal",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Summer+Fragrance",
+            "affiliateLink": "https://amzn.to/perfumes-gift-1",
+            "description": "Fresh summer scent"
+        },
+        {
+            "id": 6,
+            "name": "Winter Perfume",
+            "price": 89,
+            "originalPrice": 110,
+            "category": "seasonal",
+            "rating": 4,
+            "image": "https://via.placeholder.com/300x300?text=Winter+Perfume",
+            "affiliateLink": "https://amzn.to/perfumes-gift-1",
+            "description": "Warm winter fragrance"
+        },
+        {
+            "id": 7,
+            "name": "Designer Perfume",
+            "price": 149,
+            "originalPrice": 180,
+            "category": "designer",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Designer+Perfume",
+            "affiliateLink": "https://amzn.to/perfumes-gift-1",
+            "description": "High-end designer fragrance"
+        },
+        {
+            "id": 8,
+            "name": "Gift Set Collection",
+            "price": 199,
+            "originalPrice": 250,
+            "category": "gift-set",
+            "rating": 5,
+            "image": "https://via.placeholder.com/300x300?text=Perfume+Gift+Set",
+            "affiliateLink": "https://amzn.to/perfumes-gift-1",
+            "description": "Complete perfume gift set"
+        }
+    ]
+}
