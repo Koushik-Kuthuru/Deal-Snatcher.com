@@ -1,127 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deal Snatcher - Cool Products & Gadgets Website</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            background-color: #f9fafb;
-            color: #1f2937;
-            margin: 0;
-            padding: 0 20px;
-        }
-        h1, h2, h3 {
-            color: #1e40af;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-        h2 {
-            font-size: 2rem;
-            margin-top: 2rem;
-        }
-        h3 {
-            font-size: 1.5rem;
-            margin-top: 1.5rem;
-        }
-        p, li {
-            font-size: 1rem;
-        }
-        a {
-            color: #3b82f6;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        code {
-            background-color: #e5e7eb;
-            padding: 2px 4px;
-            border-radius: 4px;
-            font-family: monospace;
-        }
-        pre {
-            background-color: #e5e7eb;
-            padding: 10px;
-            border-radius: 6px;
-            overflow-x: auto;
-        }
-        .badge {
-            display: inline-block;
-            padding: 4px 10px;
-            margin: 2px 5px 5px 0;
-            font-size: 0.8rem;
-            border-radius: 12px;
-            background-color: #3b82f6;
-            color: white;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding-bottom: 50px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Deal Snatcher 🛍️</h1>
-        <div>
-            <span class="badge">Website Online</span>
-            <span class="badge" style="background-color: #22c55e;">MIT License</span>
-        </div>
-        <p>A modern, responsive website similar to <a href="https://dudeiwantthat.com" target="_blank">dudeiwantthat.com</a> built with <strong>HTML</strong>, <strong>Tailwind CSS</strong>, and <strong>JavaScript</strong>, perfect for showcasing cool products and gadgets.</p>
+<h1>Deal Snatcher 🛍️ - Cool Products & Gadgets Website</h1>
 
-        <h2>🚀 Features</h2>
-        <ul>
-            <li><strong>Responsive Design</strong> – Works seamlessly on desktop, tablet, and mobile devices</li>
-            <li><strong>Product Grid</strong> – Beautiful card-based layout showcasing products</li>
-            <li><strong>Real-time Search</strong> – Search through product titles and descriptions instantly</li>
-            <li><strong>Category Filtering</strong> – Filter products by categories (Gadgets, Home, Tech, Outdoor)</li>
-            <li><strong>Sorting Options</strong> – Sort by newest, most popular, or price (low to high / high to low)</li>
-            <li><strong>Product Modal</strong> – Detailed product view with images and information</li>
-            <li><strong>Load More</strong> – Pagination with "Load More" button for better performance</li>
-            <li><strong>Modern UI</strong> – Clean design with smooth animations and hover effects</li>
-        </ul>
+<p>
+    <a href="https://deal-snatcher.com">Website Online</a> | 
+    <a href="LICENSE">MIT License</a>
+</p>
 
-        <h2>🛠 Technologies Used</h2>
-        <ul>
-            <li>HTML5 – Semantic markup</li>
-            <li>Tailwind CSS – Utility-first CSS framework</li>
-            <li>JavaScript – Dynamic and interactive functionality</li>
-            <li>Font Awesome – Icon library for better visuals</li>
-            <li>Unsplash – High-quality images for products</li>
-        </ul>
+<h2>Features</h2>
+<ul>
+    <li>Responsive Design – Works on desktop, tablet, and mobile</li>
+    <li>Product Grid – Beautiful card-based layout showcasing products</li>
+    <li>Real-time Search – Search product titles and descriptions</li>
+    <li>Category Filtering – Filter products by Gadgets, Home, Tech, Outdoor</li>
+    <li>Sorting Options – Sort by newest, most popular, or price</li>
+    <li>Product Modal – Detailed view with images and information</li>
+    <li>Load More – Pagination with "Load More" button</li>
+    <li>Modern UI – Clean design with smooth animations and hover effects</li>
+</ul>
 
-        <h2>📁 File Structure</h2>
-        <pre>
+<h2>Technologies Used</h2>
+<ul>
+    <li>HTML5 – Semantic markup</li>
+    <li>Tailwind CSS – Utility-first CSS framework</li>
+    <li>JavaScript – Interactive functionality</li>
+    <li>Font Awesome – Icons for visuals</li>
+    <li>Unsplash – High-quality images</li>
+</ul>
+
+<h2>File Structure</h2>
+<pre>
 deal-snatcher.com/
 ├── index.html          # Main HTML file
 ├── script.js           # JavaScript functionality
 ├── products.json       # Product data (JSON format)
 └── README.html         # This file
-        </pre>
+</pre>
 
-        <h2>⚡ How to Use</h2>
-        <ul>
-            <li>Open <code>index.html</code> in a browser</li>
-            <li>Browse products in the grid</li>
-            <li>Use the search bar to find specific products</li>
-            <li>Click category buttons to filter products</li>
-            <li>Sort products using the dropdown menu</li>
-            <li>Click a product card to view details</li>
-            <li>Click "Load More Products" to see additional items</li>
-        </ul>
+<h2>How to Use</h2>
+<ol>
+    <li>Open <code>index.html</code> in a browser</li>
+    <li>Browse products in the grid</li>
+    <li>Use the search bar to find specific products</li>
+    <li>Click category buttons to filter products</li>
+    <li>Sort using the dropdown menu</li>
+    <li>Click a product card to view details</li>
+    <li>Click "Load More Products" to see more items</li>
+</ol>
 
-        <h2>🛒 Product Management</h2>
-        <p><strong>Adding New Products:</strong></p>
-        <pre>
+<h2>Product Management</h2>
+<h3>Adding New Products</h3>
+<pre>
 {
   "id": 13,
   "title": "Your Product Name",
@@ -142,17 +69,17 @@ deal-snatcher.com/
   "brand": "Your Brand",
   "availability": "in-stock"
 }
-        </pre>
+</pre>
 
-        <h3>Removing / Editing Products</h3>
-        <ul>
-            <li>Remove: Delete the product object from <code>products.json</code></li>
-            <li>Edit: Update product details in <code>products.json</code> (changes auto-reflect on page refresh)</li>
-        </ul>
+<h3>Removing / Editing Products</h3>
+<ul>
+    <li>Remove: Delete the product object from <code>products.json</code></li>
+    <li>Edit: Update product details in <code>products.json</code> (changes auto-reflect)</li>
+</ul>
 
-        <h3>Customization</h3>
-        <p>Change colors in Tailwind config:</p>
-        <pre>
+<h3>Customization</h3>
+<p>Change colors in Tailwind config in <code>index.html</code>:</p>
+<pre>
 tailwind.config = {
     theme: {
         extend: {
@@ -164,30 +91,27 @@ tailwind.config = {
         }
     }
 }
-        </pre>
+</pre>
 
-        <h2>🌐 Browser Support</h2>
-        <ul>
-            <li>Chrome (recommended)</li>
-            <li>Firefox</li>
-            <li>Safari</li>
-            <li>Edge</li>
-            <li>Mobile browsers</li>
-        </ul>
+<h2>Browser Support</h2>
+<ul>
+    <li>Chrome (recommended)</li>
+    <li>Firefox</li>
+    <li>Safari</li>
+    <li>Edge</li>
+    <li>Mobile browsers</li>
+</ul>
 
-        <h2>🔮 Future Enhancements</h2>
-        <ul>
-            <li>Shopping cart functionality</li>
-            <li>User authentication</li>
-            <li>Product reviews and ratings</li>
-            <li>Wishlist feature</li>
-            <li>Social media integration</li>
-            <li>Newsletter subscription</li>
-            <li>Product comparison tool</li>
-        </ul>
+<h2>Future Enhancements</h2>
+<ul>
+    <li>Shopping cart functionality</li>
+    <li>User authentication</li>
+    <li>Product reviews and ratings</li>
+    <li>Wishlist feature</li>
+    <li>Social media integration</li>
+    <li>Newsletter subscription</li>
+    <li>Product comparison tool</li>
+</ul>
 
-        <h2>📄 License</h2>
-        <p>This project is open source and available under the <strong>MIT License</strong>.</p>
-    </div>
-</body>
-</html>
+<h2>License</h2>
+<p>This project is open source and available under the <strong>MIT License</strong>.</p>
