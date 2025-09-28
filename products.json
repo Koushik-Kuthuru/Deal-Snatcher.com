@@ -2,189 +2,51 @@
     "products": [
         {
             "id": 1,
-            "title": "Smart Wireless Charger",
-            "description": "Fast wireless charging pad with LED indicator and anti-slip design. Compatible with all Qi-enabled devices.",
-            "price": 2499,
-            "originalPrice": 4149,
-            "image": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400&h=300&fit=crop",
+            "title": "Stuffcool Lucid 15W Smallest Magnetic Wireless Powerbank 5000mAh",
+            "description": "The Lucid 5000 mAh magnetic wireless powerbank offers a compact, magnetic-attach design with 15W wireless charging and up to 20W wired PD fast charging — ideal as a portable power companion for iPhones, Pixel, and other Qi devices.",
+            "price": 1449,
+            "originalPrice": 2499,
+            "image": "https://www.stuffcool.com/cdn/shop/files/Lucid_d2a0c876-c127-46a4-94ee-d7b0e071da99.jpg?v=1747459304&width=800",
             "images": [
-                "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=600&h=400&fit=crop",
-                "https://images.unsplash.com/photo-1601972602288-d52673a27443?w=600&h=400&fit=crop",
-                "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600&h=400&fit=crop"
+                "https://m.media-amazon.com/images/I/51ALAlJcb7L._SX679_.jpg",
+                "https://m.media-amazon.com/images/I/51jAGsNsaML._SL1080_.jpg",
+                "https://www.stuffcool.com/cdn/shop/files/Lucid-Bento.jpg?v=1747459304&width=800",
+                "https://m.media-amazon.com/images/I/412FoDVRBHL._SL1200_.jpg",
+                "https://www.stuffcool.com/cdn/shop/files/Lucid-Plus-LED-Infographic_55cb0387-55fd-41c1-bb81-3f034afb86f7.jpg?v=1747459304&width=800",
+                "https://www.stuffcool.com/cdn/shop/files/Artboard3copy11PB.jpg?v=1747459304&width=800",
+                "https://www.stuffcool.com/cdn/shop/files/LucidAlumClick_8f256b0a-8441-4805-ad40-b3d68f90f18e.jpg?v=1747459304&width=800"
             ],
             "youtubeVideo": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-            "affiliateLink": "https://amzn.to/4nWgDex",
+            "affiliateLink": "https://www.amazon.in/Stuffcool-Lucid-Smallest-Magnetic-powerbank/dp/B0DPHR4FG7",
             "category": "tech",
-            "rating": 4.5,
-            "reviews": 128,
-            "brand": "TechGear",
-            "availability": "in-stock"
-        },
-        {
-            "id": 2,
-            "title": "LED Strip Lights",
-            "description": "RGB LED strip lights with remote control and music sync. Perfect for gaming setups and room decoration.",
-            "price": 1659,
-            "originalPrice": 2987,
-            "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
-            "images": [
-                "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop",
-                "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=600&h=400&fit=crop",
-                "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop"
+            "rating": 4.0,
+            "reviews": 294,
+            "brand": "Stuffcool",
+            "availability": "in-stock",
+            "features": [
+                "15W magnetic wireless charging (Qi/MagSafe compatible)",
+                "Up to 20W PD wired fast charge (via USB-C)",
+                "Compact & lightweight design — travel friendly",
+                "LED indicator for battery level",
+                "Safety protections (short circuit, overcharge, temperature)"
             ],
-            "youtubeVideo": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-            "affiliateLink": "https://amazon.com/led-strip-lights",
-            "category": "home",
-            "rating": 4.2,
-            "reviews": 89,
-            "brand": "LightPro",
-            "availability": "in-stock"
-        },
-        {
-            "id": 3,
-            "title": "Portable Bluetooth Speaker",
-            "description": "Waterproof speaker with 20-hour battery life and deep bass. Perfect for outdoor adventures and parties.",
-            "price": 3319,
-            "originalPrice": 5807,
-            "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=300&fit=crop",
-            "images": [
-                "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&h=400&fit=crop",
-                "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=400&fit=crop",
-                "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=600&h=400&fit=crop"
-            ],
-            "youtubeVideo": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-            "affiliateLink": "https://amazon.com/bluetooth-speaker",
-            "category": "gadgets",
-            "rating": 4.7,
-            "reviews": 203,
-            "brand": "SoundWave",
-            "availability": "in-stock"
-        },
-        {
-            "id": 4,
-            "title": "Smart Door Lock",
-            "description": "Keyless entry with fingerprint and app control. Secure your home with advanced biometric technology.",
-            "price": 12449,
-            "originalPrice": 16599,
-            "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
-            "affiliateLink": "https://amzn.to/3xYzDEF",
-            "category": "home",
-            "rating": 4.3,
-            "reviews": 156,
-            "brand": "SecureHome",
-            "availability": "in-stock"
-        },
-        {
-            "id": 5,
-            "title": "Solar Power Bank",
-            "description": "20000mAh solar charger for outdoor adventures. Never run out of power during camping trips.",
-            "price": 4149,
-            "originalPrice": 6639,
-            "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
-            "affiliateLink": "https://amzn.to/3xYzGHI",
-            "category": "outdoor",
-            "rating": 4.4,
-            "reviews": 92,
-            "brand": "EcoPower",
-            "availability": "in-stock"
-        },
-        {
-            "id": 6,
-            "title": "Smart Watch",
-            "description": "Fitness tracker with heart rate monitor and GPS. Track your health and stay connected on the go.",
-            "price": 7467,
-            "originalPrice": 10787,
-            "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop",
-            "affiliateLink": "https://amzn.to/3xYzJKL",
-            "category": "tech",
-            "rating": 4.6,
-            "reviews": 187,
-            "brand": "FitTech",
-            "availability": "in-stock"
-        },
-        {
-            "id": 7,
-            "title": "Coffee Maker",
-            "description": "Programmable coffee maker with thermal carafe. Start your day with the perfect cup of coffee.",
-            "price": 6639,
-            "originalPrice": 9959,
-            "image": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400&h=300&fit=crop",
-            "affiliateLink": "https://amzn.to/3xYzMNO",
-            "category": "home",
-            "rating": 1.1,
-            "reviews": 74,
-            "brand": "BrewMaster",
-            "availability": "in-stock"
-        },
-        {
-            "id": 8,
-            "title": "Drone with Camera",
-            "description": "4K camera drone with GPS and return-to-home feature. Capture stunning aerial footage.",
-            "price": 16599,
-            "originalPrice": 24917,
-            "image": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=400&h=300&fit=crop",
-            "affiliateLink": "https://amzn.to/3xYzPQR",
-            "category": "gadgets",
-            "rating": 4.8,
-            "reviews": 234,
-            "brand": "SkyCam",
-            "availability": "in-stock"
-        },
-        {
-            "id": 9,
-            "title": "Camping Tent",
-            "description": "4-person waterproof tent with easy setup. Perfect for family camping adventures.",
-            "price": 7467,
-            "originalPrice": 12449,
-            "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
-            "affiliateLink": "https://amzn.to/3xYzSTU",
-            "category": "outdoor",
-            "rating": 4.3,
-            "reviews": 67,
-            "brand": "OutdoorPro",
-            "availability": "in-stock"
-        },
-        {
-            "id": 10,
-            "title": "Robot Vacuum",
-            "description": "Smart vacuum with mapping and app control. Keep your floors clean with minimal effort.",
-            "price": 20749,
-            "originalPrice": 29049,
-            "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
-            "affiliateLink": "https://amzn.to/3xYzVWX",
-            "category": "home",
-            "rating": 4.5,
-            "reviews": 145,
-            "brand": "CleanBot",
-            "availability": "in-stock"
-        },
-        {
-            "id": 11,
-            "title": "Gaming Headset",
-            "description": "7.1 surround sound headset with noise cancellation. Immerse yourself in your favorite games.",
-            "price": 5807,
-            "originalPrice": 8297,
-            "image": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=400&h=300&fit=crop",
-            "affiliateLink": "https://amzn.to/3xYzYZA",
-            "category": "tech",
-            "rating": 4.4,
-            "reviews": 198,
-            "brand": "GameAudio",
-            "availability": "in-stock"
-        },
-        {
-            "id": 12,
-            "title": "Electric Bike",
-            "description": "Foldable electric bike with 25-mile range. Eco-friendly transportation for urban commuting.",
-            "price": 49799,
-            "originalPrice": 74699,
-            "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
-            "affiliateLink": "https://amzn.to/3xYzBCD",
-            "category": "outdoor",
-            "rating": 4.6,
-            "reviews": 89,
-            "brand": "EcoRide",
-            "availability": "in-stock"
+            "delivery": {
+                "time": "2-5 business days",
+                "freeDeliveryThreshold": 399,
+                "expressDelivery": "Available"
+            },
+            "returns": {
+                "policy": "7 days return policy",
+                "conditions": "Original packaging required"
+            },
+            "warranty": {
+                "duration": "6 months (extendable)",
+                "type": "Manufacturer warranty"
+            },
+            "support": {
+                "availability": "Business hours",
+                "contact": "support@stuffcool.com"
+            }
         }
     ]
 }

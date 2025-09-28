@@ -105,3 +105,4 @@ deal-snatcher.com/
 - [ ] Clear browser cache if needed
 
 Your Deal Snatcher website is now ready for favicon integration!
+

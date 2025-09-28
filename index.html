@@ -90,6 +90,21 @@
             }
         }
     </script>
+
+    <style>
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+    </style>
 </head>
 
 <body class="bg-gray-50 dark:bg-gray-900 transition-colors">
@@ -145,6 +160,8 @@
                     <a href="gift-guide.html"
                         class="text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">Gift
                         Guide</a>
+                    <a href="earn.html"
+                        class="text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">Earn</a>
                     <a href="about.html"
                         class="text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">About</a>
                 </nav>
@@ -208,6 +225,8 @@
             <a href="gift-guide.html"
                 class="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">Gift
                 Guide</a>
+            <a href="earn.html"
+                class="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">Earn</a>
             <a href="about.html"
                 class="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">About</a>
         </div>
@@ -220,16 +239,6 @@
             <h2 class="text-4xl md:text-6xl font-bold mb-4">Discover Amazing Products</h2>
             <p class="text-xl md:text-2xl mb-8 opacity-90">Find the coolest gadgets, unique items, and must-have
                 products</p>
-            <div class="max-w-2xl mx-auto">
-                <div class="relative">
-                    <input type="text" id="searchInput" placeholder="Search for products..."
-                        class="w-full px-6 py-4 rounded-full text-gray-800 text-lg focus:outline-none focus:ring-4 focus:ring-white">
-                    <button
-                        class="absolute right-2 top-2 bg-white text-primary px-6 py-2 rounded-full hover:bg-gray-100 transition-colors">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -295,59 +304,134 @@
     </main>
 
     <!-- Product Modal -->
-    <div id="productModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+    <div id="productModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 overflow-y-auto scrollbar-hide">
         <div class="flex items-center justify-center min-h-screen p-4">
             <div
-                class="bg-white dark:bg-gray-800 rounded-lg max-w-6xl w-full max-h-[90vh] overflow-y-auto transition-colors">
+                class="bg-white dark:bg-gray-800 rounded-lg max-w-6xl w-full max-h-[90vh] overflow-y-auto scrollbar-hide transition-colors">
+                <!-- Header with close button -->
+                <div class="flex justify-between items-center p-4 border-b border-gray-200 dark:border-gray-700">
+                    <h2 id="modalTitle" class="text-2xl font-bold text-gray-900 dark:text-white"></h2>
+                    <button id="closeModalBtn"
+                        class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+
                 <div class="flex flex-col lg:flex-row">
-                    <!-- Left Side - Images and Video -->
+                    <!-- Left Side - Image Gallery -->
                     <div class="w-full lg:w-1/2 p-6">
                         <!-- Main Image -->
                         <div class="mb-4">
-                            <img id="modalMainImage" src="" alt="" class="w-full h-96 object-cover rounded-lg">
+                            <img id="modalMainImage" src="" alt=""
+                                class="w-full h-96 object-contain bg-gray-100 rounded-lg shadow-lg">
                         </div>
 
                         <!-- Image Thumbnails -->
-                        <div id="imageThumbnails" class="flex space-x-2 mb-4 overflow-x-auto">
+                        <div id="imageThumbnails" class="flex space-x-2 mb-4 overflow-x-auto scrollbar-hide">
                             <!-- Thumbnails will be dynamically added here -->
                         </div>
 
-                        <!-- YouTube Video -->
-                        <div id="youtubeSection" class="hidden">
-                            <h4 class="text-lg font-semibold mb-2">Product Video</h4>
-                            <div class="relative w-full h-64 bg-gray-200 rounded-lg overflow-hidden">
-                                <iframe id="youtubeVideo" width="100%" height="100%" frameborder="0"
-                                    allowfullscreen></iframe>
-                            </div>
+                        <!-- YouTube Video Section -->
+                        <div id="youtubeSection" class="hidden mt-6">
+                            <iframe id="youtubeVideo" width="100%" height="315" frameborder="0" allowfullscreen
+                                class="rounded-lg"></iframe>
                         </div>
                     </div>
 
-                    <!-- Right Side - Product Info -->
+                    <!-- Right Side - Product Details -->
                     <div class="w-full lg:w-1/2 p-6">
-                        <button id="closeModal"
-                            class="float-right text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200">
-                            <i class="fas fa-times text-xl"></i>
-                        </button>
-                        <h3 id="modalTitle" class="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100"></h3>
-                        <p id="modalDescription" class="text-gray-600 dark:text-gray-400 mb-4"></p>
-                        <div class="flex items-center mb-4">
-                            <span id="modalPrice"
-                                class="text-3xl font-bold text-primary-500 dark:text-primary-400"></span>
-                            <span id="modalOriginalPrice"
-                                class="text-lg text-gray-500 dark:text-gray-400 line-through ml-2"></span>
-                        </div>
+                        <!-- Product Title -->
+                        <h1 id="modalProductTitle" class="text-3xl font-bold text-gray-900 dark:text-white mb-2"></h1>
+
+                        <!-- Brand -->
                         <div class="mb-4">
-                            <span id="modalBrand"
-                                class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-2 py-1 rounded text-sm"></span>
+                            <span class="text-sm text-gray-500">Brand: </span>
+                            <span id="modalBrand" class="font-semibold text-gray-900 dark:text-white"></span>
                         </div>
-                        <a id="buyNowBtn" href="#" target="_blank"
-                            class="w-full bg-primary-500 text-white py-3 rounded-lg hover:bg-primary-600 transition-colors mb-4 inline-block text-center shadow-lg hover:shadow-xl">
-                            <i class="fas fa-shopping-cart mr-2"></i>Buy Now
-                        </a>
-                        <button id="watchVideoBtn"
-                            class="w-full border border-primary-500 text-primary-500 dark:text-primary-400 py-3 rounded-lg hover:bg-primary-100 dark:hover:bg-primary-900 transition-colors hidden">
-                            <i class="fab fa-youtube mr-2"></i>Watch Video
-                        </button>
+
+                        <!-- Rating and Reviews -->
+                        <div class="flex items-center mb-4">
+                            <div id="modalRating" class="flex text-yellow-400 mr-2"></div>
+                            <span id="modalRatingText" class="text-sm text-gray-600 dark:text-gray-400"></span>
+                            <span id="modalReviews" class="text-sm text-gray-500 ml-2"></span>
+                        </div>
+
+                        <!-- Price Section -->
+                        <div class="mb-6 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
+                            <div class="flex items-center space-x-4 mb-2">
+                                <span id="modalPrice" class="text-3xl font-bold text-primary-500"></span>
+                                <span id="modalOriginalPrice" class="text-xl text-gray-500 line-through"></span>
+                                <span id="modalDiscount"
+                                    class="bg-red-500 text-white px-2 py-1 rounded text-sm font-semibold"></span>
+                            </div>
+                            <p class="text-sm text-gray-500">Inclusive of all taxes</p>
+                            <p class="text-sm text-green-600 font-semibold mt-1">Free delivery on orders above ₹499</p>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="space-y-3">
+                            <a id="buyNowBtn" href="#"
+                                class="w-full bg-primary-500 text-white py-3 rounded-lg hover:bg-primary-600 transition-colors inline-block text-center shadow-lg hover:shadow-xl font-semibold">
+                                <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                            </a>
+                            <button id="watchVideoBtn"
+                                class="w-full border border-primary-500 text-primary-500 dark:text-primary-400 py-3 rounded-lg hover:bg-primary-100 dark:hover:bg-primary-900 transition-colors hidden">
+                                <i class="fab fa-youtube mr-2"></i>Watch Product Video
+                            </button>
+                        </div>
+
+                        <!-- About the Product -->
+                        <div class="mt-6">
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">About the Product</h3>
+                            <div class="space-y-4">
+                                <!-- Product Description -->
+                                <div>
+                                    <h4 class="font-medium text-gray-900 dark:text-white mb-2">Description</h4>
+                                    <p id="modalAboutDescription"
+                                        class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed"></p>
+                                </div>
+
+                                <!-- Key Features -->
+                                <div>
+                                    <h4 class="font-medium text-gray-900 dark:text-white mb-2">Key Features</h4>
+                                    <ul id="modalAboutFeatures"
+                                        class="text-gray-600 dark:text-gray-400 text-sm space-y-1">
+                                        <!-- Features will be dynamically added here -->
+                                    </ul>
+                                </div>
+
+                                <!-- Specifications -->
+                                <div>
+                                    <h4 class="font-medium text-gray-900 dark:text-white mb-2">Specifications</h4>
+                                    <div id="modalSpecifications"
+                                        class="text-gray-600 dark:text-gray-400 text-sm space-y-1">
+                                        <!-- Specifications will be dynamically added here -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Additional Info -->
+                        <div class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
+                            <div class="grid grid-cols-2 gap-4 text-sm text-gray-600 dark:text-gray-400">
+                                <div>
+                                    <span class="font-semibold">Delivery:</span><br>
+                                    <span id="modalDeliveryTime">2-3 business days</span>
+                                </div>
+                                <div>
+                                    <span class="font-semibold">Returns:</span><br>
+                                    <span id="modalReturnPolicy">7 days return policy</span>
+                                </div>
+                                <div>
+                                    <span class="font-semibold">Warranty:</span><br>
+                                    <span id="modalWarranty">1 year manufacturer</span>
+                                </div>
+                                <div>
+                                    <span class="font-semibold">Support:</span><br>
+                                    <span id="modalSupport">24/7 customer service</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -384,16 +468,20 @@
                 <div>
                     <h4 class="font-semibold mb-4">Follow Us</h4>
                     <div class="flex space-x-4 mb-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://www.facebook.com/share/17DjtcdQAs/" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-white transition-colors">
                             <i class="fab fa-facebook text-xl"></i>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                            <i class="fab fa-twitter text-xl"></i>
+                        <a href="https://www.reddit.com/u/DealSnatcher/s/MohHMOO7QX" target="_blank"
+                            rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-reddit text-xl"></i>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://www.instagram.com/dealsnatcher_official?igsh=dHh1ajR5dHFxdDB3" target="_blank"
+                            rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
                             <i class="fab fa-instagram text-xl"></i>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://youtube.com/@deal-snatcher?si=_mScYbHh7JHbjWBu" target="_blank"
+                            rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
                             <i class="fab fa-youtube text-xl"></i>
                         </a>
                     </div>
@@ -426,10 +514,615 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="global-search.js"></script>
+
+
+    <!-- Chatbot CSS -->
+    <style>
+        .chatbot-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .chatbot-window {
+            width: 350px;
+            height: 500px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .chatbot-header {
+            background: linear-gradient(135deg, #DC2626, #B91C1C);
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chatbot-messages {
+            flex: 1;
+            padding: 15px;
+            overflow-y: auto;
+            background: #f8f9fa;
+        }
+
+        .message {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .message.user {
+            justify-content: flex-end;
+        }
+
+        .message.bot {
+            justify-content: flex-start;
+        }
+
+        .message-content {
+            max-width: 80%;
+            padding: 10px 15px;
+            border-radius: 18px;
+            word-wrap: break-word;
+        }
+
+        .message.user .message-content {
+            background: #DC2626;
+            color: white;
+            border-bottom-right-radius: 5px;
+        }
+
+        .message.bot .message-content {
+            background: white;
+            color: #333;
+            border: 1px solid #e5e7eb;
+            border-bottom-left-radius: 5px;
+        }
+
+        .message-avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin: 0 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .message.user .message-avatar {
+            background: #DC2626;
+            color: white;
+        }
+
+        .message.bot .message-avatar {
+            background: #f3f4f6;
+            color: #DC2626;
+        }
+
+        .chatbot-buttons {
+            padding: 15px;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .quick-reply-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+
+        .quick-reply-btn {
+            background: #f8f9fa;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 12px 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            font-size: 12px;
+            color: #374151;
+        }
+
+        .quick-reply-btn:hover {
+            background: #DC2626;
+            color: white;
+            border-color: #DC2626;
+            transform: translateY(-2px);
+        }
+
+        .quick-reply-btn i {
+            font-size: 16px;
+        }
+
+        .chatbot-toggle {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #DC2626, #B91C1C);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .chatbot-toggle:hover {
+            transform: scale(1.1);
+        }
+
+        .typing-indicator {
+            display: none;
+            align-items: center;
+            gap: 5px;
+            padding: 10px 15px;
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 18px;
+            border-bottom-left-radius: 5px;
+            max-width: 80px;
+        }
+
+        .typing-dot {
+            width: 6px;
+            height: 6px;
+            background: #DC2626;
+            border-radius: 50%;
+            animation: typing 1.4s infinite;
+        }
+
+        .typing-dot:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .typing-dot:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes typing {
+
+            0%,
+            60%,
+            100% {
+                transform: translateY(0);
+            }
+
+            30% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .quick-replies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .quick-reply {
+            background: #f3f4f6;
+            border: 1px solid #d1d5db;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .quick-reply:hover {
+            background: #DC2626;
+            color: white;
+            border-color: #DC2626;
+        }
+
+        .dark .chatbot-window {
+            background: #1f2937;
+            color: white;
+        }
+
+        .dark .chatbot-messages {
+            background: #111827;
+        }
+
+        .dark .message.bot .message-content {
+            background: #374151;
+            color: white;
+            border-color: #4b5563;
+        }
+
+        .dark .chatbot-buttons {
+            border-top-color: #374151;
+        }
+
+        .dark .quick-reply-btn {
+            background: #374151;
+            border-color: #4b5563;
+            color: #d1d5db;
+        }
+
+        .dark .quick-reply-btn:hover {
+            background: #DC2626;
+            border-color: #DC2626;
+            color: white;
+        }
+
+        .dark .typing-indicator {
+            background: #374151;
+            border-color: #4b5563;
+        }
+
+        .dark .quick-reply {
+            background: #374151;
+            color: white;
+            border-color: #4b5563;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+
+    <!-- Chatbot JavaScript -->
+    <script>
+        // Deal-Snatcher Chatbot JavaScript
+        class DealSnatcherChatbot {
+            constructor() {
+                this.isOpen = false;
+                this.messages = [];
+                this.knowledgeBase = this.initializeKnowledgeBase();
+                this.quickReplies = [
+                    "What products do you have?",
+                    "How do referral codes work?",
+                    "What are the best deals?",
+                    "How to earn money?",
+                    "Contact support",
+                    "About Deal-Snatcher"
+                ];
+                this.init();
+            }
+
+            init() {
+                this.addWelcomeMessage();
+                this.loadChatHistory();
+            }
+
+            initializeKnowledgeBase() {
+                return {
+                    // General site information
+                    "about": {
+                        keywords: ["about", "what is", "deal-snatcher", "website", "site"],
+                        responses: [
+                            "Deal-Snatcher is your one-stop destination for amazing products, cool gadgets, and unique items at great prices! We feature products from various categories including tech, home, outdoor, and gadgets.",
+                            "We also offer referral programs where you can earn money by referring friends to popular earn.",
+                            "Our mission is to help you discover the best deals and earn money through referrals!"
+                        ]
+                    },
+
+                    // Products and deals
+                    "products": {
+                        keywords: ["products", "deals", "gadgets", "items", "buy", "purchase", "shop"],
+                        responses: [
+                            "We have amazing products across multiple categories:",
+                            "🔹 Tech: Wireless chargers, powerbanks, smart devices",
+                            "🔹 Home & Living: Kitchen gadgets, home decor, appliances",
+                            "🔹 Outdoor: Camping gear, sports equipment, travel accessories",
+                            "🔹 Gadgets: Cool tech accessories, phone accessories, innovative products",
+                            "All products come with detailed descriptions, multiple images, and YouTube videos for better understanding!"
+                        ]
+                    },
+
+                    // Referral programs
+                    "referral": {
+                        keywords: ["referral", "code", "earn", "money", "reward", "cashback", "app"],
+                        responses: [
+                            "We offer referral programs for popular earn! Here's how it works:",
+                            "🔹 Copy the referral code from our earn section",
+                            "🔹 Download the app using our link",
+                            "🔹 Use the referral code during signup",
+                            "🔹 Complete the required actions (verification, first transaction, etc.)",
+                            "🔹 Earn rewards ranging from ₹50 to ₹150 per referral!",
+                            "Popular apps include PhonePe, Google Pay, Paytm, CRED, and many more!"
+                        ]
+                    },
+
+                    // Gift guides
+                    "gifts": {
+                        keywords: ["gift", "gifts", "present", "men", "women", "mom", "dad", "boyfriend", "girlfriend"],
+                        responses: [
+                            "We have comprehensive gift guides for everyone!",
+                            "🎁 Men's Gifts: Tech gadgets, gaming accessories, tools",
+                            "🎁 Women's Gifts: Jewelry, beauty products, fashion accessories",
+                            "🎁 Mom's Gifts: Kitchen appliances, home decor, wellness products",
+                            "🎁 Dad's Gifts: Tech gadgets, outdoor gear, tools",
+                            "🎁 Watches & Perfumes: Luxury timepieces and fragrances",
+                            "Each category has carefully curated products perfect for gifting!"
+                        ]
+                    },
+
+                    // Support and contact
+                    "support": {
+                        keywords: ["support", "help", "contact", "problem", "issue", "complaint"],
+                        responses: [
+                            "We're here to help! You can reach us through:",
+                            "📧 Email: support@deal-snatcher.com",
+                            "📱 Phone: +91-XXXX-XXXX-XX",
+                            "💬 Live Chat: Available 24/7",
+                            "📝 Contact Form: Visit our contact page",
+                            "We typically respond within 24 hours!"
+                        ]
+                    },
+
+                    // Pricing and discounts
+                    "pricing": {
+                        keywords: ["price", "cost", "discount", "sale", "cheap", "expensive", "affordable"],
+                        responses: [
+                            "Our products are competitively priced with great discounts!",
+                            "💰 Most products have 20-50% discounts",
+                            "🚚 Free delivery on orders above ₹499",
+                            "💳 Multiple payment options available",
+                            "🔄 7-day return policy",
+                            "🛡️ 1-year manufacturer warranty",
+                            "Prices are inclusive of all taxes!"
+                        ]
+                    },
+
+                    // Categories
+                    "categories": {
+                        keywords: ["category", "categories", "tech", "home", "outdoor", "gadgets"],
+                        responses: [
+                            "We have products in these main categories:",
+                            "📱 Tech: Smartphones, accessories, chargers, powerbanks",
+                            "🏠 Home & Living: Kitchen gadgets, home decor, appliances",
+                            "🏔️ Outdoor: Camping gear, sports equipment, travel accessories",
+                            "⚡ Gadgets: Cool tech accessories, innovative products",
+                            "You can filter products by category on our main page!"
+                        ]
+                    },
+
+                    // How to use the site
+                    "usage": {
+                        keywords: ["how to", "use", "navigate", "search", "filter", "sort"],
+                        responses: [
+                            "Using Deal-Snatcher is easy! Here's how:",
+                            "🔍 Search: Use the search bar to find specific products",
+                            "🏷️ Filter: Click category buttons to filter products",
+                            "📊 Sort: Use the dropdown to sort by price, rating, or newest",
+                            "👆 Click: Click any product to see detailed information",
+                            "📱 Mobile: Fully responsive - works great on mobile devices",
+                            "🌙 Theme: Toggle between light and dark themes"
+                        ]
+                    },
+
+                    // Fallback responses
+                    "default": {
+                        responses: [
+                            "I'm not sure I understand that. Could you rephrase your question?",
+                            "I can help you with information about products, referral programs, gift guides, or general site questions. What would you like to know?",
+                            "Let me know if you need help with products, deals, referral codes, or anything else about Deal-Snatcher!"
+                        ]
+                    }
+                };
+            }
+
+            addWelcomeMessage() {
+                const welcomeMessage = {
+                    type: 'bot',
+                    content: "Hi! I'm the Deal-Snatcher bot. I can help you with:",
+                    timestamp: new Date()
+                };
+
+                this.addQuickReplies(welcomeMessage);
+                this.displayMessage(welcomeMessage);
+
+                // Add quick replies
+                setTimeout(() => {
+                    this.addQuickRepliesToUI();
+                }, 500);
+            }
+
+            addQuickReplies(message) {
+                message.quickReplies = this.quickReplies;
+            }
+
+            addQuickRepliesToUI() {
+                const messagesContainer = document.getElementById('chatbotMessages');
+                const quickRepliesDiv = document.createElement('div');
+                quickRepliesDiv.className = 'quick-replies';
+                quickRepliesDiv.id = 'quickReplies';
+
+                this.quickReplies.forEach(reply => {
+                    const button = document.createElement('button');
+                    button.className = 'quick-reply';
+                    button.textContent = reply;
+                    button.onclick = () => this.sendQuickReply(reply);
+                    quickRepliesDiv.appendChild(button);
+                });
+
+                messagesContainer.appendChild(quickRepliesDiv);
+            }
+
+            sendQuickReply(reply) {
+                // Remove quick replies
+                const quickReplies = document.getElementById('quickReplies');
+                if (quickReplies) {
+                    quickReplies.remove();
+                }
+
+                // Send the quick reply as a user message
+                this.addMessage('user', reply);
+                this.processMessage(reply);
+            }
+
+            toggleChatbot() {
+                const chatbotWindow = document.getElementById('chatbotWindow');
+                this.isOpen = !this.isOpen;
+
+                if (this.isOpen) {
+                    chatbotWindow.style.display = 'flex';
+                    chatbotWindow.style.animation = 'slideIn 0.3s ease-out';
+                } else {
+                    chatbotWindow.style.display = 'none';
+                }
+            }
+
+            handleKeyPress(event) {
+                if (event.key === 'Enter') {
+                    this.sendMessage();
+                }
+            }
+
+            sendMessage() {
+                const input = document.getElementById('chatbotInput');
+                const message = input.value.trim();
+
+                if (message) {
+                    this.addMessage('user', message);
+                    this.processMessage(message);
+                    input.value = '';
+                }
+            }
+
+            addMessage(type, content) {
+                const message = {
+                    type: type,
+                    content: content,
+                    timestamp: new Date()
+                };
+
+                this.messages.push(message);
+                this.displayMessage(message);
+                this.saveChatHistory();
+            }
+
+            displayMessage(message) {
+                const messagesContainer = document.getElementById('chatbotMessages');
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `message ${message.type}`;
+
+                const avatar = document.createElement('div');
+                avatar.className = 'message-avatar';
+                avatar.textContent = message.type === 'user' ? 'U' : 'B';
+
+                const content = document.createElement('div');
+                content.className = 'message-content';
+                content.textContent = message.content;
+
+                messageDiv.appendChild(avatar);
+                messageDiv.appendChild(content);
+                messagesContainer.appendChild(messageDiv);
+
+                this.scrollToBottom();
+            }
+
+            processMessage(message) {
+                this.showTypingIndicator();
+
+                setTimeout(() => {
+                    this.hideTypingIndicator();
+                    const response = this.getResponse(message);
+                    this.addMessage('bot', response);
+                }, 1000 + Math.random() * 1000); // Random delay to simulate thinking
+            }
+
+            getResponse(message) {
+                const lowerMessage = message.toLowerCase();
+
+                // Check each knowledge base category
+                for (const [category, data] of Object.entries(this.knowledgeBase)) {
+                    if (category === 'default') continue;
+
+                    for (const keyword of data.keywords) {
+                        if (lowerMessage.includes(keyword)) {
+                            const responses = data.responses;
+                            return responses[Math.floor(Math.random() * responses.length)];
+                        }
+                    }
+                }
+
+                // Return default response
+                const defaultResponses = this.knowledgeBase.default.responses;
+                return defaultResponses[Math.floor(Math.random() * defaultResponses.length)];
+            }
+
+            showTypingIndicator() {
+                const typingIndicator = document.getElementById('typingIndicator');
+                typingIndicator.style.display = 'flex';
+                this.scrollToBottom();
+            }
+
+            hideTypingIndicator() {
+                const typingIndicator = document.getElementById('typingIndicator');
+                typingIndicator.style.display = 'none';
+            }
+
+            scrollToBottom() {
+                const messagesContainer = document.getElementById('chatbotMessages');
+                messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            }
+
+            saveChatHistory() {
+                localStorage.setItem('dealSnatcherChatHistory', JSON.stringify(this.messages));
+            }
+
+            loadChatHistory() {
+                const savedHistory = localStorage.getItem('dealSnatcherChatHistory');
+                if (savedHistory) {
+                    this.messages = JSON.parse(savedHistory);
+                    // Display all messages except the welcome message
+                    this.messages.forEach(message => {
+                        if (message.content !== "Hi! I'm the Deal-Snatcher bot. I can help you with:") {
+                            this.displayMessage(message);
+                        }
+                    });
+                }
+            }
+        }
+
+        // Initialize chatbot when page loads
+        let chatbot;
+        document.addEventListener('DOMContentLoaded', function () {
+            chatbot = new DealSnatcherChatbot();
+        });
+
+        // Global functions for HTML onclick events
+        function toggleChatbot() {
+            chatbot.toggleChatbot();
+        }
+
+        function sendMessage() {
+            chatbot.sendMessage();
+        }
+
+        function handleKeyPress(event) {
+            chatbot.handleKeyPress(event);
+        }
+    </script>
 
     <!-- Initialize AdSense -->
     <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
+        (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </body>
 

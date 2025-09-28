@@ -1,0 +1,583 @@
+{
+    "apps": [
+        {
+            "id": 1,
+            "name": "POP UPI",
+            "type": "app",
+            "logo": "https://play-lh.googleusercontent.com/Br4JLbZotZRd3MawaMPBIf1QRHDJtJCMzUbJSZmJq0Xlhh_9lkjvKo92oo5nvm2bq1J_=s96-rw",
+            "description": "POP UPI is India’s most rewarding UPI app. Send money instantly and earn cash rewards with every transaction.",
+            "rating": 4.6,
+            "reviews": 500000,
+            "reward": 50,
+            "platform": "Android & iOS",
+            "payment": "UPI",
+            "minimum": 1,
+            "support": "24/7 Support",
+            "referralCode": "SH16OLZMOM",
+            "downloadLink": "https://dl.popclub.co/GOVga2pn1Wb",
+            "features": [
+                "Instant UPI transfers",
+                "Earn rewards on transactions",
+                "Secure & reliable payments",
+                "Works across all banks",
+                "User-friendly interface"
+            ],
+            "earningSteps": [
+                "Step 1: Download POP UPI using referral link",
+                "Step 2: Sign up and enter referral code SH16OLZMOM",
+                "Step 3: Send money to anyone via POP UPI",
+                "Step 4: Complete first successful transaction",
+                "Step 5: Earn ₹5 instant cash reward"
+            ],
+            "terms": [
+                "Valid for new users only",
+                "Minimum ₹1 transaction required",
+                "Reward credited instantly",
+                "One reward per referral",
+                "Subject to POP UPI terms and conditions"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "PhonePe",
+            "type": "app",
+            "logo": "https://play-lh.googleusercontent.com/6iyA2zVz5PyyMjK5SIxdUhrb7oh9cYVXJ93q6DZkmx07Er1o90PXYeo6mzL4VC2Gj9s=w240-h480-rw",
+            "description": "PhonePe is India’s go-to app for Money Transfers, Recharges, Bill Payments, and much more. Make instant payments to merchants and contacts using UPI.",
+            "rating": 4.7,
+            "reviews": 10000000,
+            "reward": 200,
+            "platform": "Android & iOS",
+            "payment": "UPI, Cards, Wallet",
+            "minimum": 1,
+            "support": "24/7 Support",
+            "referralCode": "",
+            "downloadLink": "https://phon.pe/mxvndn9t",
+            "features": [
+                "Instant UPI transfers",
+                "Mobile recharges",
+                "Bill payments",
+                "Grocery & food payments",
+                "Secure & reliable transactions"
+            ],
+            "earningSteps": [
+                "Step 1: Download PhonePe using referral link",
+                "Step 2: Register with your mobile number linked to a bank account",
+                "Step 3: Set up your UPI PIN",
+                "Step 4: Make instant payments to merchants or contacts",
+                "Step 5: Enjoy seamless digital transactions"
+            ],
+            "terms": [
+                "Valid for users in India",
+                "Mobile number must be linked to a bank account",
+                "UPI PIN setup required",
+                "One account per user",
+                "Subject to PhonePe terms and conditions"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Paytm",
+            "type": "app",
+            "logo": "https://via.placeholder.com/150x150/00BAF2/FFFFFF?text=PT",
+            "description": "India's largest mobile payment platform. Recharge, pay bills, book tickets, and shop online.",
+            "rating": 4.2,
+            "reviews": 2100000,
+            "reward": 75,
+            "platform": "Android & iOS",
+            "payment": "UPI, Wallet, Bank",
+            "minimum": 25,
+            "support": "24/7 Phone Support",
+            "referralCode": "PAYTM789",
+            "downloadLink": "https://paytm.com/apps",
+            "features": [
+                "Mobile recharges",
+                "Bill payments",
+                "Movie tickets",
+                "Flight bookings",
+                "Online shopping"
+            ],
+            "earningSteps": [
+                "Download Paytm app",
+                "Sign up with mobile number",
+                "Add money to wallet",
+                "Complete first transaction",
+                "Earn ₹75 reward"
+            ],
+            "terms": [
+                "New user registration",
+                "Minimum wallet add ₹100",
+                "Reward in 24 hours",
+                "One-time offer",
+                "Valid for 7 days"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "CRED",
+            "type": "app",
+            "logo": "https://via.placeholder.com/150x150/00D4AA/FFFFFF?text=CR",
+            "description": "Credit card bill payment app that rewards you for paying bills on time. Earn CRED coins and rewards.",
+            "rating": 4.6,
+            "reviews": 450000,
+            "reward": 200,
+            "platform": "Android & iOS",
+            "payment": "UPI, Credit Card",
+            "minimum": 1000,
+            "support": "Email Support",
+            "downloadLink": "https://cred.club/your-referral-code",
+            "features": [
+                "Credit card payments",
+                "CRED coins rewards",
+                "Credit score tracking",
+                "Exclusive offers",
+                "Premium memberships"
+            ],
+            "earningSteps": [
+                "Download CRED app",
+                "Link your credit card",
+                "Pay your first bill",
+                "Complete verification",
+                "Get ₹200 reward"
+            ],
+            "terms": [
+                "Credit card required",
+                "Minimum bill ₹1000",
+                "Reward in 72 hours",
+                "Valid for premium users",
+                "Subject to credit approval"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Mobikwik",
+            "type": "app",
+            "logo": "https://via.placeholder.com/150x150/FF6900/FFFFFF?text=MK",
+            "description": "Digital wallet and payment platform. Recharge, pay bills, book tickets, and earn cashback.",
+            "rating": 4.1,
+            "reviews": 320000,
+            "reward": 50,
+            "platform": "Android & iOS",
+            "payment": "UPI, Wallet, Cards",
+            "minimum": 50,
+            "support": "24/7 Chat",
+            "downloadLink": "https://mobikwik.com/your-referral-code",
+            "features": [
+                "Mobile recharges",
+                "Bill payments",
+                "Movie tickets",
+                "Flight bookings",
+                "Cashback rewards"
+            ],
+            "earningSteps": [
+                "Install Mobikwik app",
+                "Create account",
+                "Add money to wallet",
+                "Make first payment",
+                "Receive ₹50 reward"
+            ],
+            "terms": [
+                "New user only",
+                "Minimum wallet add ₹100",
+                "Reward in 24 hours",
+                "One-time bonus",
+                "Valid for 15 days"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Freecharge",
+            "type": "app",
+            "logo": "https://via.placeholder.com/150x150/00B4DB/FFFFFF?text=FC",
+            "description": "Quick recharge and bill payment platform. Get instant recharges and pay bills with cashback.",
+            "rating": 4.0,
+            "reviews": 180000,
+            "reward": 25,
+            "platform": "Android & iOS",
+            "payment": "UPI, Cards, Wallet",
+            "minimum": 25,
+            "support": "Email Support",
+            "downloadLink": "https://freecharge.in/your-referral-code",
+            "features": [
+                "Instant recharges",
+                "Bill payments",
+                "Cashback offers",
+                "Online shopping",
+                "Gift cards"
+            ],
+            "earningSteps": [
+                "Download Freecharge",
+                "Sign up with mobile",
+                "Complete verification",
+                "Make first recharge",
+                "Get ₹25 cashback"
+            ],
+            "terms": [
+                "New registration",
+                "Minimum recharge ₹50",
+                "Cashback in 2 hours",
+                "One-time offer",
+                "Valid for 30 days"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Amazon Pay",
+            "type": "app",
+            "logo": "https://via.placeholder.com/150x150/FF9900/FFFFFF?text=AP",
+            "description": "Amazon's digital wallet. Shop on Amazon, pay bills, recharge, and earn cashback rewards.",
+            "rating": 4.4,
+            "reviews": 850000,
+            "reward": 80,
+            "platform": "Android & iOS",
+            "payment": "UPI, Cards, Wallet",
+            "minimum": 100,
+            "support": "24/7 Chat Support",
+            "downloadLink": "https://amazon.in/your-referral-code",
+            "features": [
+                "Amazon shopping",
+                "Bill payments",
+                "Mobile recharges",
+                "Cashback rewards",
+                "Prime benefits"
+            ],
+            "earningSteps": [
+                "Download Amazon app",
+                "Sign up for Amazon Pay",
+                "Add money to wallet",
+                "Make first payment",
+                "Get ₹80 reward"
+            ],
+            "terms": [
+                "New Amazon Pay user",
+                "Minimum wallet add ₹200",
+                "Reward in 48 hours",
+                "Valid for 14 days",
+                "Subject to Amazon's terms"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "BharatPe",
+            "type": "app",
+            "logo": "https://via.placeholder.com/150x150/00A651/FFFFFF?text=BP",
+            "description": "Merchant-focused payment app. Accept payments, manage business, and earn rewards.",
+            "rating": 4.2,
+            "reviews": 120000,
+            "reward": 60,
+            "platform": "Android & iOS",
+            "payment": "UPI, Bank Transfer",
+            "minimum": 50,
+            "support": "Phone Support",
+            "downloadLink": "https://bharatpe.com/your-referral-code",
+            "features": [
+                "QR code payments",
+                "Business loans",
+                "Merchant services",
+                "Cashback rewards",
+                "Financial products"
+            ],
+            "earningSteps": [
+                "Download BharatPe app",
+                "Complete merchant verification",
+                "Accept first payment",
+                "Link bank account",
+                "Earn ₹60 reward"
+            ],
+            "terms": [
+                "Merchant account required",
+                "Minimum transaction ₹100",
+                "Reward in 24 hours",
+                "Valid for businesses",
+                "Subject to verification"
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Swiggy",
+            "type": "website",
+            "logo": "https://via.placeholder.com/150x150/FF6B35/FFFFFF?text=SW",
+            "description": "India's leading food delivery platform. Order food from your favorite restaurants and earn rewards.",
+            "rating": 4.3,
+            "reviews": 1500000,
+            "reward": 120,
+            "platform": "Web & Mobile App",
+            "payment": "UPI, Cards, Wallet",
+            "minimum": 150,
+            "support": "24/7 Chat Support",
+            "downloadLink": "https://swiggy.com/your-referral-code",
+            "features": [
+                "Food delivery",
+                "Restaurant discovery",
+                "Live order tracking",
+                "Cashback rewards",
+                "Swiggy Super membership"
+            ],
+            "earningSteps": [
+                "Sign up on Swiggy using our link",
+                "Complete profile verification",
+                "Place your first order",
+                "Make payment",
+                "Get ₹120 reward"
+            ],
+            "terms": [
+                "New user registration",
+                "Minimum order ₹150",
+                "Reward in 24 hours",
+                "Valid for 7 days",
+                "Subject to Swiggy's terms"
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Zomato",
+            "type": "website",
+            "logo": "https://via.placeholder.com/150x150/E23744/FFFFFF?text=ZO",
+            "description": "Food delivery and restaurant discovery platform. Order food, discover restaurants, and earn rewards.",
+            "rating": 4.1,
+            "reviews": 1200000,
+            "reward": 100,
+            "platform": "Web & Mobile App",
+            "payment": "UPI, Cards, Wallet",
+            "minimum": 200,
+            "support": "24/7 Chat Support",
+            "downloadLink": "https://zomato.com/your-referral-code",
+            "features": [
+                "Food delivery",
+                "Restaurant reviews",
+                "Live order tracking",
+                "Zomato Gold membership",
+                "Cashback offers"
+            ],
+            "earningSteps": [
+                "Register on Zomato via our link",
+                "Complete profile setup",
+                "Place first order",
+                "Complete payment",
+                "Earn ₹100 reward"
+            ],
+            "terms": [
+                "New user only",
+                "Minimum order ₹200",
+                "Reward in 48 hours",
+                "Valid for 10 days",
+                "Subject to Zomato's terms"
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Uber",
+            "type": "website",
+            "logo": "https://via.placeholder.com/150x150/000000/FFFFFF?text=UB",
+            "description": "Global ride-sharing platform. Book rides, order food, and earn money by driving.",
+            "rating": 4.2,
+            "reviews": 2000000,
+            "reward": 150,
+            "platform": "Web & Mobile App",
+            "payment": "UPI, Cards, Wallet",
+            "minimum": 100,
+            "support": "24/7 Support",
+            "downloadLink": "https://uber.com/your-referral-code",
+            "features": [
+                "Ride booking",
+                "Uber Eats delivery",
+                "Live tracking",
+                "Multiple payment options",
+                "Driver opportunities"
+            ],
+            "earningSteps": [
+                "Sign up on Uber using our link",
+                "Add payment method",
+                "Complete profile verification",
+                "Take your first ride",
+                "Get ₹150 reward"
+            ],
+            "terms": [
+                "New user registration",
+                "Minimum ride ₹100",
+                "Reward in 72 hours",
+                "Valid for 14 days",
+                "Subject to Uber's terms"
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Ola",
+            "type": "website",
+            "logo": "https://via.placeholder.com/150x150/000000/FFFFFF?text=OL",
+            "description": "India's leading ride-sharing platform. Book rides, order food, and earn rewards.",
+            "rating": 4.0,
+            "reviews": 1800000,
+            "reward": 100,
+            "platform": "Web & Mobile App",
+            "payment": "UPI, Cards, Wallet",
+            "minimum": 80,
+            "support": "24/7 Support",
+            "downloadLink": "https://olacabs.com/your-referral-code",
+            "features": [
+                "Ride booking",
+                "Ola Money wallet",
+                "Food delivery",
+                "Live tracking",
+                "Driver opportunities"
+            ],
+            "earningSteps": [
+                "Register on Ola via our link",
+                "Add payment method",
+                "Complete verification",
+                "Book first ride",
+                "Earn ₹100 reward"
+            ],
+            "terms": [
+                "New user only",
+                "Minimum ride ₹80",
+                "Reward in 48 hours",
+                "Valid for 7 days",
+                "Subject to Ola's terms"
+            ]
+        },
+        {
+            "id": 13,
+            "name": "Flipkart",
+            "type": "website",
+            "logo": "https://via.placeholder.com/150x150/2874F0/FFFFFF?text=FK",
+            "description": "India's leading e-commerce platform. Shop online, pay bills, and earn rewards.",
+            "rating": 4.4,
+            "reviews": 5000000,
+            "reward": 200,
+            "platform": "Web & Mobile App",
+            "payment": "UPI, Cards, EMI",
+            "minimum": 500,
+            "support": "24/7 Support",
+            "downloadLink": "https://flipkart.com/your-referral-code",
+            "features": [
+                "Online shopping",
+                "Flipkart Plus membership",
+                "EMI options",
+                "Cashback rewards",
+                "Same-day delivery"
+            ],
+            "earningSteps": [
+                "Sign up on Flipkart using our link",
+                "Complete profile verification",
+                "Make first purchase",
+                "Complete payment",
+                "Get ₹200 reward"
+            ],
+            "terms": [
+                "New user registration",
+                "Minimum purchase ₹500",
+                "Reward in 72 hours",
+                "Valid for 30 days",
+                "Subject to Flipkart's terms"
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Myntra",
+            "type": "website",
+            "logo": "https://via.placeholder.com/150x150/FF6B9D/FFFFFF?text=MY",
+            "description": "India's leading fashion e-commerce platform. Shop for clothes, shoes, and accessories.",
+            "rating": 4.3,
+            "reviews": 2500000,
+            "reward": 150,
+            "platform": "Web & Mobile App",
+            "payment": "UPI, Cards, EMI",
+            "minimum": 300,
+            "support": "24/7 Support",
+            "downloadLink": "https://myntra.com/your-referral-code",
+            "features": [
+                "Fashion shopping",
+                "Myntra Insider membership",
+                "Try & Buy",
+                "Cashback rewards",
+                "Express delivery"
+            ],
+            "earningSteps": [
+                "Register on Myntra via our link",
+                "Complete profile setup",
+                "Make first purchase",
+                "Complete payment",
+                "Earn ₹150 reward"
+            ],
+            "terms": [
+                "New user only",
+                "Minimum purchase ₹300",
+                "Reward in 48 hours",
+                "Valid for 14 days",
+                "Subject to Myntra's terms"
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Nykaa",
+            "type": "website",
+            "logo": "https://via.placeholder.com/150x150/FF6B9D/FFFFFF?text=NY",
+            "description": "India's leading beauty and wellness platform. Shop for cosmetics, skincare, and personal care.",
+            "rating": 4.2,
+            "reviews": 1800000,
+            "reward": 100,
+            "platform": "Web & Mobile App",
+            "payment": "UPI, Cards, EMI",
+            "minimum": 250,
+            "support": "24/7 Support",
+            "downloadLink": "https://nykaa.com/your-referral-code",
+            "features": [
+                "Beauty products",
+                "Nykaa Pro membership",
+                "Expert advice",
+                "Cashback rewards",
+                "Free samples"
+            ],
+            "earningSteps": [
+                "Sign up on Nykaa using our link",
+                "Complete profile verification",
+                "Make first purchase",
+                "Complete payment",
+                "Get ₹100 reward"
+            ],
+            "terms": [
+                "New user registration",
+                "Minimum purchase ₹250",
+                "Reward in 24 hours",
+                "Valid for 7 days",
+                "Subject to Nykaa's terms"
+            ]
+        },
+        {
+            "id": 16,
+            "name": "BigBasket",
+            "type": "website",
+            "logo": "https://via.placeholder.com/150x150/4CAF50/FFFFFF?text=BB",
+            "description": "India's leading online grocery platform. Order groceries, fruits, vegetables, and household items.",
+            "rating": 4.1,
+            "reviews": 1200000,
+            "reward": 80,
+            "platform": "Web & Mobile App",
+            "payment": "UPI, Cards, COD",
+            "minimum": 200,
+            "support": "24/7 Support",
+            "downloadLink": "https://bigbasket.com/your-referral-code",
+            "features": [
+                "Grocery delivery",
+                "Fresh produce",
+                "BigBasket Express",
+                "Cashback rewards",
+                "Scheduled delivery"
+            ],
+            "earningSteps": [
+                "Register on BigBasket via our link",
+                "Complete profile setup",
+                "Place first order",
+                "Complete payment",
+                "Earn ₹80 reward"
+            ],
+            "terms": [
+                "New user only",
+                "Minimum order ₹200",
+                "Reward in 24 hours",
+                "Valid for 7 days",
+                "Subject to BigBasket's terms"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "id": 1,
+    "title": "Product Name",
+    "description": "Detailed product description explaining what the product does and its main benefits.",
+    "price": 9999,
+    "originalPrice": 14999,
+    "image": "https://images.unsplash.com/photo-xxxxx?w=400&h=300&fit=crop",
+    "images": [
+        "https://images.unsplash.com/photo-xxxxx?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-yyyyy?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-zzzzz?w=600&h=400&fit=crop"
+    ],
+    "youtubeVideo": "https://www.youtube.com/watch?v=VIDEO_ID",
+    "affiliateLink": "https://amzn.to/your-affiliate-link",
+    "category": "tech",
+    "rating": 4.5,
+    "reviews": 150,
+    "brand": "Your Brand",
+    "availability": "in-stock",
+    "features": [
+        "Feature 1: Description of first key feature",
+        "Feature 2: Description of second key feature",
+        "Feature 3: Description of third key feature",
+        "Feature 4: Description of fourth key feature",
+        "Feature 5: Description of fifth key feature"
+    ],
+    "delivery": {
+        "time": "2-3 business days",
+        "freeDeliveryThreshold": 499,
+        "expressDelivery": "Available for ₹99"
+    },
+    "returns": {
+        "policy": "7 days return policy",
+        "conditions": "Original packaging required"
+    },
+    "warranty": {
+        "duration": "1 year manufacturer warranty",
+        "type": "Replacement warranty"
+    },
+    "support": {
+        "availability": "24/7 customer service",
+        "contact": "support@yourbrand.com"
+    }
+}

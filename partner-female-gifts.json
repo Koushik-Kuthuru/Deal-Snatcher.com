@@ -7,90 +7,362 @@
         {
             "id": 1,
             "name": "Diamond Jewelry Set",
+            "title": "Diamond Jewelry Set",
             "price": 74617,
             "originalPrice": 99517,
             "category": "jewelry",
             "rating": 5,
-            "image": "https://via.placeholder.com/300x300?text=Diamond+Jewelry+Set",
+            "reviews": 89,
+            "brand": "DiamondLux",
+            "availability": "in-stock",
+            "image": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&h=300&fit=crop",
+            "images": [
+                "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&h=400&fit=crop"
+            ],
+            "youtubeVideo": "",
             "affiliateLink": "https://amzn.to/partner-female-1",
-            "description": "Stunning diamond necklace and earrings set"
+            "description": "Stunning diamond necklace and earrings set. Perfect for special romantic occasions.",
+            "features": [
+                "Genuine diamond stones",
+                "18k gold setting",
+                "Elegant gift box included",
+                "Certificate of authenticity",
+                "Professional jewelry care guide"
+            ],
+            "delivery": {
+                "time": "3-5 business days",
+                "freeDeliveryThreshold": 999,
+                "expressDelivery": "Available for ₹299"
+            },
+            "returns": {
+                "policy": "30 days return policy",
+                "conditions": "Original packaging and certificate required"
+            },
+            "warranty": {
+                "duration": "Lifetime warranty",
+                "type": "Manufacturer warranty"
+            },
+            "support": {
+                "availability": "24/7 customer service",
+                "contact": "support@diamondlux.com"
+            }
         },
         {
             "id": 2,
             "name": "Romantic Spa Retreat",
+            "title": "Romantic Spa Retreat",
             "price": 499,
             "originalPrice": 699,
             "category": "spa",
             "rating": 5,
-            "image": "https://via.placeholder.com/300x300?text=Romantic+Spa+Retreat",
-            "affiliateLink": "https://amzn.to/partner-female-1",
-            "description": "Luxury spa retreat for couples"
+            "reviews": 156,
+            "brand": "RomanceSpa",
+            "availability": "in-stock",
+            "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=400&h=300&fit=crop",
+            "images": [
+                "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1596178060819-4e8aa92917d3?w=600&h=400&fit=crop"
+            ],
+            "youtubeVideo": "",
+            "affiliateLink": "https://amzn.to/partner-female-2",
+            "description": "Luxury spa retreat for couples. Perfect romantic experience for two.",
+            "features": [
+                "Couples massage therapy",
+                "Private spa suite",
+                "Champagne and chocolates",
+                "4-hour spa experience",
+                "Romantic candlelit atmosphere"
+            ],
+            "delivery": {
+                "time": "Instant booking",
+                "freeDeliveryThreshold": 0,
+                "expressDelivery": "Not applicable"
+            },
+            "returns": {
+                "policy": "Booking modification only",
+                "conditions": "24 hours advance notice"
+            },
+            "warranty": {
+                "duration": "Experience guarantee",
+                "type": "Service quality"
+            },
+            "support": {
+                "availability": "24/7 customer service",
+                "contact": "support@romancespa.com"
+            }
         },
         {
             "id": 3,
             "name": "Designer Handbag",
+            "title": "Designer Handbag",
             "price": 599,
             "originalPrice": 799,
             "category": "fashion",
             "rating": 5,
-            "image": "https://via.placeholder.com/300x300?text=Designer+Handbag",
-            "affiliateLink": "https://amzn.to/partner-female-1",
-            "description": "Luxury designer handbag"
+            "reviews": 203,
+            "brand": "FashionLux",
+            "availability": "in-stock",
+            "image": "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=400&h=300&fit=crop",
+            "images": [
+                "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=600&h=400&fit=crop"
+            ],
+            "youtubeVideo": "",
+            "affiliateLink": "https://amzn.to/partner-female-3",
+            "description": "Luxury designer handbag. Elegant and sophisticated for the special woman in your life.",
+            "features": [
+                "Premium leather material",
+                "Designer brand authenticity",
+                "Multiple compartments",
+                "Adjustable shoulder strap",
+                "Elegant gift packaging"
+            ],
+            "delivery": {
+                "time": "2-3 business days",
+                "freeDeliveryThreshold": 499,
+                "expressDelivery": "Available for ₹99"
+            },
+            "returns": {
+                "policy": "7 days return policy",
+                "conditions": "Original packaging required"
+            },
+            "warranty": {
+                "duration": "1 year manufacturer warranty",
+                "type": "Replacement warranty"
+            },
+            "support": {
+                "availability": "24/7 customer service",
+                "contact": "support@fashionlux.com"
+            }
         },
         {
             "id": 4,
             "name": "Romantic Getaway",
+            "title": "Romantic Getaway",
             "price": 999,
             "originalPrice": 1299,
             "category": "travel",
             "rating": 5,
-            "image": "https://via.placeholder.com/300x300?text=Romantic+Getaway",
-            "affiliateLink": "https://amzn.to/partner-female-1",
-            "description": "Dream romantic vacation"
+            "reviews": 94,
+            "brand": "RomanceTravel",
+            "availability": "in-stock",
+            "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+            "images": [
+                "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=600&h=400&fit=crop"
+            ],
+            "youtubeVideo": "",
+            "affiliateLink": "https://amzn.to/partner-female-4",
+            "description": "Dream romantic vacation package. Create unforgettable memories together.",
+            "features": [
+                "2-night luxury accommodation",
+                "Romantic dinner for two",
+                "Couple's spa treatment",
+                "Scenic location views",
+                "All-inclusive package"
+            ],
+            "delivery": {
+                "time": "Instant booking",
+                "freeDeliveryThreshold": 0,
+                "expressDelivery": "Not applicable"
+            },
+            "returns": {
+                "policy": "Booking modification only",
+                "conditions": "7 days advance notice"
+            },
+            "warranty": {
+                "duration": "Experience guarantee",
+                "type": "Service quality"
+            },
+            "support": {
+                "availability": "24/7 customer service",
+                "contact": "support@romancetravel.com"
+            }
         },
         {
             "id": 5,
             "name": "Luxury Perfume Set",
+            "title": "Luxury Perfume Set",
             "price": 299,
             "originalPrice": 399,
             "category": "perfume",
             "rating": 5,
-            "image": "https://via.placeholder.com/300x300?text=Luxury+Perfume+Set",
-            "affiliateLink": "https://amzn.to/partner-female-1",
-            "description": "Exclusive luxury perfume collection"
+            "reviews": 178,
+            "brand": "FragranceElite",
+            "availability": "in-stock",
+            "image": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=300&fit=crop",
+            "images": [
+                "https://images.unsplash.com/photo-1541643600914-78b084683601?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=600&h=400&fit=crop"
+            ],
+            "youtubeVideo": "",
+            "affiliateLink": "https://amzn.to/partner-female-5",
+            "description": "Exclusive luxury perfume collection. Elegant fragrances for special occasions.",
+            "features": [
+                "Premium fragrance collection",
+                "Luxury gift packaging",
+                "Long-lasting scent",
+                "Exclusive brand selection",
+                "Perfect for romantic occasions"
+            ],
+            "delivery": {
+                "time": "2-3 business days",
+                "freeDeliveryThreshold": 499,
+                "expressDelivery": "Available for ₹99"
+            },
+            "returns": {
+                "policy": "7 days return policy",
+                "conditions": "Unopened products only"
+            },
+            "warranty": {
+                "duration": "Product guarantee",
+                "type": "Quality assurance"
+            },
+            "support": {
+                "availability": "24/7 customer service",
+                "contact": "support@fragranceelite.com"
+            }
         },
         {
             "id": 6,
             "name": "Personalized Love Gift",
+            "title": "Personalized Love Gift",
             "price": 199,
             "originalPrice": 250,
             "category": "personalized",
             "rating": 4,
-            "image": "https://via.placeholder.com/300x300?text=Personalized+Love+Gift",
-            "affiliateLink": "https://amzn.to/partner-female-1",
-            "description": "Custom romantic personalized gift"
+            "reviews": 267,
+            "brand": "LoveCraft",
+            "availability": "in-stock",
+            "image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=300&fit=crop",
+            "images": [
+                "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=600&h=400&fit=crop"
+            ],
+            "youtubeVideo": "",
+            "affiliateLink": "https://amzn.to/partner-female-6",
+            "description": "Custom romantic personalized gift. Create a unique memory together.",
+            "features": [
+                "Custom engraving included",
+                "High-quality materials",
+                "Personalized message option",
+                "Elegant gift packaging",
+                "Perfect for anniversaries"
+            ],
+            "delivery": {
+                "time": "5-7 business days",
+                "freeDeliveryThreshold": 299,
+                "expressDelivery": "Available for ₹149"
+            },
+            "returns": {
+                "policy": "30 days return policy",
+                "conditions": "Customization changes only"
+            },
+            "warranty": {
+                "duration": "Quality guarantee",
+                "type": "Craftsmanship assurance"
+            },
+            "support": {
+                "availability": "Business hours",
+                "contact": "support@lovecraft.com"
+            }
         },
         {
             "id": 7,
             "name": "Fine Dining Experience",
+            "title": "Fine Dining Experience",
             "price": 399,
             "originalPrice": 499,
             "category": "romantic",
             "rating": 5,
-            "image": "https://via.placeholder.com/300x300?text=Fine+Dining+Experience",
-            "affiliateLink": "https://amzn.to/partner-female-1",
-            "description": "Exclusive fine dining experience"
+            "reviews": 123,
+            "brand": "CulinaryRomance",
+            "availability": "in-stock",
+            "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop",
+            "images": [
+                "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=600&h=400&fit=crop"
+            ],
+            "youtubeVideo": "",
+            "affiliateLink": "https://amzn.to/partner-female-7",
+            "description": "Exclusive fine dining experience. Romantic dinner for two at a luxury restaurant.",
+            "features": [
+                "Multi-course gourmet meal",
+                "Wine pairing included",
+                "Romantic candlelit setting",
+                "Professional service",
+                "3-hour dining experience"
+            ],
+            "delivery": {
+                "time": "Instant booking",
+                "freeDeliveryThreshold": 0,
+                "expressDelivery": "Not applicable"
+            },
+            "returns": {
+                "policy": "Booking modification only",
+                "conditions": "48 hours advance notice"
+            },
+            "warranty": {
+                "duration": "Experience guarantee",
+                "type": "Service quality"
+            },
+            "support": {
+                "availability": "24/7 customer service",
+                "contact": "support@culinaryromance.com"
+            }
         },
         {
             "id": 8,
             "name": "Luxury Skincare Set",
+            "title": "Luxury Skincare Set",
             "price": 249,
             "originalPrice": 299,
             "category": "beauty",
             "rating": 4,
-            "image": "https://via.placeholder.com/300x300?text=Luxury+Skincare+Set",
-            "affiliateLink": "https://amzn.to/partner-female-1",
-            "description": "Premium skincare collection"
+            "reviews": 189,
+            "brand": "BeautyElite",
+            "availability": "in-stock",
+            "image": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&h=300&fit=crop",
+            "images": [
+                "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1596178060819-4e8aa92917d3?w=600&h=400&fit=crop"
+            ],
+            "youtubeVideo": "",
+            "affiliateLink": "https://amzn.to/partner-female-8",
+            "description": "Premium skincare collection. Luxury beauty products for pampering your special someone.",
+            "features": [
+                "Premium skincare products",
+                "Anti-aging formula",
+                "Luxury gift packaging",
+                "Cruelty-free products",
+                "Suitable for all skin types"
+            ],
+            "delivery": {
+                "time": "2-3 business days",
+                "freeDeliveryThreshold": 499,
+                "expressDelivery": "Available for ₹99"
+            },
+            "returns": {
+                "policy": "7 days return policy",
+                "conditions": "Unopened products only"
+            },
+            "warranty": {
+                "duration": "Product guarantee",
+                "type": "Quality assurance"
+            },
+            "support": {
+                "availability": "24/7 customer service",
+                "contact": "support@beautyelite.com"
+            }
         }
     ]
 }

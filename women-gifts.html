@@ -8,6 +8,21 @@
     <meta name="description" content="Thoughtful gifts she'll absolutely love">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+    </style>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -99,6 +114,8 @@
                     <a href="gift-guide.html"
                         class="text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">Gift
                         Guide</a>
+                    <a href="earn.html"
+                        class="text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">Earn</a>
                     <a href="about.html"
                         class="text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">About</a>
                 </nav>
@@ -147,6 +164,8 @@
             <a href="gift-guide.html"
                 class="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">Gift
                 Guide</a>
+            <a href="earn.html"
+                class="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">Earn</a>
             <a href="about.html"
                 class="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">About</a>
         </div>
@@ -290,6 +309,141 @@
         </div>
     </div>
 
+    <!-- Product Modal -->
+    <div id="productModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 overflow-y-auto scrollbar-hide">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div
+                class="bg-white dark:bg-gray-800 rounded-lg max-w-6xl w-full max-h-[90vh] overflow-y-auto scrollbar-hide transition-colors">
+                <!-- Header with close button -->
+                <div class="flex justify-between items-center p-4 border-b border-gray-200 dark:border-gray-700">
+                    <h2 id="modalTitle" class="text-2xl font-bold text-gray-900 dark:text-white"></h2>
+                    <button id="closeModalBtn"
+                        class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full p-2 transition-colors">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+
+                <div class="flex flex-col lg:flex-row">
+                    <!-- Fixed Left Side - Image Gallery -->
+                    <div class="w-full lg:w-1/2 p-6 flex-shrink-0">
+                        <!-- Main Image -->
+                        <div class="mb-4">
+                            <img id="modalMainImage" src="" alt=""
+                                class="w-full h-96 object-contain bg-gray-100 rounded-lg shadow-lg">
+                        </div>
+
+                        <!-- Image Thumbnails -->
+                        <div id="imageThumbnails" class="flex space-x-2 mb-4 overflow-x-auto scrollbar-hide">
+                            <!-- Thumbnails will be dynamically added here -->
+                        </div>
+
+                        <!-- YouTube Video Section -->
+                        <div id="youtubeSection" class="hidden mt-6">
+                            <iframe id="youtubeVideo" width="100%" height="315" frameborder="0" allowfullscreen
+                                class="rounded-lg"></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Scrollable Right Side - Product Details -->
+                    <div class="w-full lg:w-1/2 p-6 overflow-y-auto scrollbar-hide">
+                        <!-- Product Title -->
+                        <h1 id="modalProductTitle" class="text-3xl font-bold text-gray-900 dark:text-white mb-2"></h1>
+
+                        <!-- Brand -->
+                        <div class="mb-4">
+                            <span class="text-sm text-gray-500">Brand: </span>
+                            <span id="modalBrand" class="font-semibold text-gray-900 dark:text-white"></span>
+                        </div>
+
+                        <!-- Rating and Reviews -->
+                        <div class="flex items-center mb-4">
+                            <div id="modalRating" class="flex text-yellow-400 mr-2"></div>
+                            <span id="modalRatingText" class="text-sm text-gray-600 dark:text-gray-400"></span>
+                            <span id="modalReviews" class="text-sm text-gray-500 ml-2"></span>
+                        </div>
+
+                        <!-- Price Section -->
+                        <div class="mb-6 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
+                            <div class="flex items-center space-x-4 mb-2">
+                                <span id="modalPrice" class="text-3xl font-bold text-primary-500"></span>
+                                <span id="modalOriginalPrice" class="text-xl text-gray-500 line-through"></span>
+                                <span id="modalDiscount"
+                                    class="bg-red-500 text-white px-2 py-1 rounded text-sm font-semibold"></span>
+                            </div>
+                            <p class="text-sm text-gray-500">Inclusive of all taxes</p>
+                            <p class="text-sm text-green-600 font-semibold mt-1">Free delivery on orders above ₹499</p>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="space-y-3">
+                            <a id="buyNowBtn" href="#"
+                                class="w-full bg-primary-500 text-white py-3 rounded-lg hover:bg-primary-600 transition-colors inline-block text-center shadow-lg hover:shadow-xl font-semibold">
+                                <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                            </a>
+                            <button id="watchVideoBtn"
+                                class="w-full border border-primary-500 text-primary-500 dark:text-primary-400 py-3 rounded-lg hover:bg-primary-100 dark:hover:bg-primary-900 transition-colors hidden">
+                                <i class="fab fa-youtube mr-2"></i>Watch Product Video
+                            </button>
+                        </div>
+
+                        <!-- About the Product -->
+                        <div class="mt-6">
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">About the Product</h3>
+                            <div class="space-y-4">
+                                <!-- Product Description -->
+                                <div>
+                                    <h4 class="font-medium text-gray-900 dark:text-white mb-2">Description</h4>
+                                    <p id="modalAboutDescription"
+                                        class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed"></p>
+                                </div>
+
+                                <!-- Key Features -->
+                                <div>
+                                    <h4 class="font-medium text-gray-900 dark:text-white mb-2">Key Features</h4>
+                                    <ul id="modalAboutFeatures"
+                                        class="text-gray-600 dark:text-gray-400 text-sm space-y-1">
+                                        <!-- Features will be dynamically added here -->
+                                    </ul>
+                                </div>
+
+                                <!-- Specifications -->
+                                <div>
+                                    <h4 class="font-medium text-gray-900 dark:text-white mb-2">Specifications</h4>
+                                    <div id="modalSpecifications"
+                                        class="text-gray-600 dark:text-gray-400 text-sm space-y-1">
+                                        <!-- Specifications will be dynamically added here -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Additional Info -->
+                        <div class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
+                            <div class="grid grid-cols-2 gap-4 text-sm text-gray-600 dark:text-gray-400">
+                                <div>
+                                    <span class="font-semibold">Delivery:</span><br>
+                                    <span id="modalDeliveryTime">2-3 business days</span>
+                                </div>
+                                <div>
+                                    <span class="font-semibold">Returns:</span><br>
+                                    <span id="modalReturnPolicy">7 days return policy</span>
+                                </div>
+                                <div>
+                                    <span class="font-semibold">Warranty:</span><br>
+                                    <span id="modalWarranty">1 year manufacturer</span>
+                                </div>
+                                <div>
+                                    <span class="font-semibold">Support:</span><br>
+                                    <span id="modalSupport">24/7 customer service</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="bg-gray-900 dark:bg-gray-950 text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -318,9 +472,17 @@
                 <div>
                     <h4 class="font-semibold mb-4">Connect</h4>
                     <div class="flex space-x-4 mb-4">
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/17DjtcdQAs/" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.reddit.com/u/DealSnatcher/s/MohHMOO7QX" target="_blank"
+                            rel="noopener noreferrer" class="text-gray-400 hover:text-white"><i
+                                class="fab fa-reddit"></i></a>
+                        <a href="https://www.instagram.com/dealsnatcher_official?igsh=dHh1ajR5dHFxdDB3" target="_blank"
+                            rel="noopener noreferrer" class="text-gray-400 hover:text-white"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com/@deal-snatcher?si=_mScYbHh7JHbjWBu" target="_blank"
+                            rel="noopener noreferrer" class="text-gray-400 hover:text-white"><i
+                                class="fab fa-youtube"></i></a>
                     </div>
                     <!-- Theme Toggle -->
                     <div class="flex items-center space-x-3">
@@ -352,6 +514,201 @@
 
     <script src="script.js"></script>
     <script>
+        // Modal functionality for gift pages
+        function openProductModal(product) {
+            // Set main product info
+            document.getElementById('modalMainImage').src = product.image;
+            document.getElementById('modalTitle').textContent = product.title;
+            document.getElementById('modalProductTitle').textContent = product.title;
+            document.getElementById('modalAboutDescription').textContent = product.description;
+            document.getElementById('modalPrice').textContent = `₹${formatNumber(product.price)}`;
+            document.getElementById('modalOriginalPrice').textContent = `₹${formatNumber(product.originalPrice)}`;
+            document.getElementById('modalBrand').textContent = product.brand || 'Brand';
+
+            // Calculate and display discount
+            const discount = Math.round((1 - product.price / product.originalPrice) * 100);
+            document.getElementById('modalDiscount').textContent = `${discount}% OFF`;
+
+            // Set rating and reviews
+            const ratingElement = document.getElementById('modalRating');
+            const rating = Math.floor(product.rating);
+            ratingElement.innerHTML = '';
+            for (let i = 0; i < 5; i++) {
+                const star = document.createElement('i');
+                star.className = i < rating ? 'fas fa-star' : 'far fa-star';
+                ratingElement.appendChild(star);
+            }
+            document.getElementById('modalRatingText').textContent = `${product.rating} out of 5`;
+            document.getElementById('modalReviews').textContent = `(${product.reviews} reviews)`;
+
+            // Generate key features from JSON data
+            const featuresElement = document.getElementById('modalAboutFeatures');
+            featuresElement.innerHTML = '';
+            if (product.features && product.features.length > 0) {
+                product.features.forEach(feature => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<i class="fas fa-check text-green-500 mr-2"></i>${feature}`;
+                    featuresElement.appendChild(li);
+                });
+            } else {
+                // Fallback features if not specified in JSON
+                const defaultFeatures = [
+                    'High-quality materials and construction',
+                    'Easy to use and setup',
+                    'Compatible with most devices',
+                    '1-year manufacturer warranty',
+                    'Free shipping on orders above ₹499'
+                ];
+                defaultFeatures.forEach(feature => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<i class="fas fa-check text-green-500 mr-2"></i>${feature}`;
+                    featuresElement.appendChild(li);
+                });
+            }
+
+            // Set affiliate link
+            const buyNowBtn = document.getElementById('buyNowBtn');
+            if (product.affiliateLink) {
+                buyNowBtn.href = product.affiliateLink;
+                buyNowBtn.target = '_blank';
+                buyNowBtn.rel = 'noopener noreferrer';
+                console.log('Affiliate link set:', product.affiliateLink);
+
+                // Add click event listener to ensure it works
+                buyNowBtn.onclick = function (e) {
+                    e.preventDefault();
+                    window.open(product.affiliateLink, '_blank', 'noopener,noreferrer');
+                };
+            } else {
+                buyNowBtn.href = '#';
+                console.log('No affiliate link found for product:', product.title);
+            }
+
+            // Handle multiple images
+            const imageThumbnails = document.getElementById('imageThumbnails');
+            imageThumbnails.innerHTML = '';
+
+            if (product.images && product.images.length > 0) {
+                product.images.forEach((image, index) => {
+                    const thumbnail = document.createElement('img');
+                    thumbnail.src = image;
+                    thumbnail.alt = `${product.title} - Image ${index + 1}`;
+                    thumbnail.className = 'w-20 h-20 object-contain bg-gray-100 rounded-lg cursor-pointer border-2 border-transparent hover:border-primary-500 transition-colors';
+                    thumbnail.onclick = () => {
+                        document.getElementById('modalMainImage').src = image;
+                        // Update active thumbnail
+                        imageThumbnails.querySelectorAll('img').forEach(img => img.classList.remove('border-primary-500'));
+                        thumbnail.classList.add('border-primary-500');
+                    };
+                    if (index === 0) {
+                        thumbnail.classList.add('border-primary-500');
+                    }
+                    imageThumbnails.appendChild(thumbnail);
+                });
+            }
+
+            // Handle YouTube video
+            const youtubeSection = document.getElementById('youtubeSection');
+            const watchVideoBtn = document.getElementById('watchVideoBtn');
+            const youtubeVideo = document.getElementById('youtubeVideo');
+
+            if (product.youtubeVideo) {
+                // Convert YouTube URL to embed format
+                const videoId = extractYouTubeId(product.youtubeVideo);
+                if (videoId) {
+                    youtubeVideo.src = `https://www.youtube.com/embed/${videoId}`;
+                    youtubeSection.classList.remove('hidden');
+                    watchVideoBtn.classList.remove('hidden');
+                    watchVideoBtn.onclick = () => {
+                        // Open YouTube video in new tab with autoplay
+                        const youtubeUrl = `https://www.youtube.com/watch?v=${videoId}&autoplay=1`;
+                        window.open(youtubeUrl, '_blank', 'noopener,noreferrer');
+                    };
+                }
+            } else {
+                youtubeSection.classList.add('hidden');
+                watchVideoBtn.classList.add('hidden');
+            }
+
+            // Set About the Product section
+            document.getElementById('modalAboutDescription').textContent = product.description;
+
+            // Set About Features
+            const aboutFeaturesElement = document.getElementById('modalAboutFeatures');
+            aboutFeaturesElement.innerHTML = '';
+            product.features.forEach(feature => {
+                const li = document.createElement('li');
+                li.innerHTML = `<i class="fas fa-check text-green-500 mr-2"></i>${feature}`;
+                aboutFeaturesElement.appendChild(li);
+            });
+
+            // Set Specifications
+            const specificationsElement = document.getElementById('modalSpecifications');
+            specificationsElement.innerHTML = `
+                <div class="flex justify-between"><span>Brand:</span><span>${product.brand || 'N/A'}</span></div>
+                <div class="flex justify-between"><span>Category:</span><span>${product.category || 'N/A'}</span></div>
+                <div class="flex justify-between"><span>Rating:</span><span>${product.rating || 'N/A'} ⭐</span></div>
+                <div class="flex justify-between"><span>Reviews:</span><span>${product.reviews || 'N/A'}</span></div>
+                <div class="flex justify-between"><span>Availability:</span><span class="text-green-600">${product.availability || 'In Stock'}</span></div>
+            `;
+
+            // Set additional info from JSON data
+            document.getElementById('modalDeliveryTime').textContent = product.delivery?.time || '2-3 business days';
+            document.getElementById('modalReturnPolicy').textContent = product.returns?.policy || '7 days return policy';
+            document.getElementById('modalWarranty').textContent = product.warranty?.duration || '1 year manufacturer';
+            document.getElementById('modalSupport').textContent = product.support?.availability || '24/7 customer service';
+
+            const productModal = document.getElementById('productModal');
+            productModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeProductModal() {
+            // Hide video section and reset video
+            const youtubeSection = document.getElementById('youtubeSection');
+            const watchVideoBtn = document.getElementById('watchVideoBtn');
+            const youtubeVideo = document.getElementById('youtubeVideo');
+
+            youtubeSection.classList.add('hidden');
+            watchVideoBtn.classList.remove('hidden');
+            youtubeVideo.src = ''; // Stop video playback
+
+            const productModal = document.getElementById('productModal');
+            productModal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Extract YouTube video ID from URL
+        function extractYouTubeId(url) {
+            const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+            const match = url.match(regExp);
+            return (match && match[2].length === 11) ? match[2] : null;
+        }
+
+        // Initialize modal event listeners
+        document.addEventListener('DOMContentLoaded', function () {
+            const closeModalBtn = document.getElementById('closeModalBtn');
+            const productModal = document.getElementById('productModal');
+
+            if (closeModalBtn) {
+                closeModalBtn.addEventListener('click', closeProductModal);
+            }
+            if (productModal) {
+                productModal.addEventListener('click', (e) => {
+                    if (e.target === productModal) {
+                        closeProductModal();
+                    }
+                });
+            }
+
+            // Close modal with Escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && !productModal.classList.contains('hidden')) {
+                    closeProductModal();
+                }
+            });
+        });
+
         let womenProducts = [];
         let filteredProducts = [];
         let displayedProducts = 12;
@@ -403,11 +760,11 @@
             }
 
             productsGrid.innerHTML = productsToShow.map(product => `
-                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                    <img src="${product.image}" alt="${product.name}" class="w-full h-48 object-cover">
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow cursor-pointer" onclick="openProductModal(${JSON.stringify(product).replace(/"/g, '&quot;')})">
+                    <img src="${product.image}" alt="${product.title}" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">${product.name}</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3">${product.description}</p>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2 line-clamp-2">${product.title}</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 line-clamp-2">${product.description}</p>
                         <div class="flex items-center mb-3">
                             <div class="flex text-yellow-400">
                                 ${'★'.repeat(product.rating)}${'☆'.repeat(5 - product.rating)}
@@ -419,9 +776,6 @@
                                 <span class="text-2xl font-bold text-primary-500">₹${formatNumber(product.price)}</span>
                                 ${product.originalPrice ? `<span class="text-sm text-gray-500 line-through ml-2">₹${formatNumber(product.originalPrice)}</span>` : ''}
                             </div>
-                            <a href="${product.affiliateLink}" target="_blank" class="bg-primary-500 hover:bg-primary-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
-                                View Product
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -499,6 +853,9 @@
             displayProducts();
         });
     </script>
+
+    <script src="global-search.js"></script>
+
 </body>
 
 </html>

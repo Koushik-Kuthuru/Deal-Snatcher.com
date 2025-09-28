@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "deal-snatcher.com",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "deal-snatcher.com"
+	}
+}

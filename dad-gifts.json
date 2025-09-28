@@ -11,10 +11,41 @@
             "originalPrice": 9960,
             "category": "accessories",
             "rating": 5,
+            "reviews": 234,
+            "brand": "LeatherCraft",
             "image": "https://via.placeholder.com/300x300?text=Leather+Wallet",
+            "images": [
+                "https://via.placeholder.com/600x400?text=Leather+Wallet+1",
+                "https://via.placeholder.com/600x400?text=Leather+Wallet+2",
+                "https://via.placeholder.com/600x400?text=Leather+Wallet+3"
+            ],
             "affiliateLink": "https://amzn.to/dad-gift-1",
             "youtubeVideo": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-            "description": "Premium leather wallet with money clip"
+            "description": "Premium leather wallet with money clip",
+            "features": [
+                "Genuine leather construction",
+                "Multiple card slots",
+                "Money clip included",
+                "RFID blocking technology",
+                "Lifetime warranty"
+            ],
+            "delivery": {
+                "time": "2-3 business days",
+                "freeDeliveryThreshold": 499,
+                "expressDelivery": "Available for ₹99"
+            },
+            "returns": {
+                "policy": "30 days return policy",
+                "conditions": "Original packaging required"
+            },
+            "warranty": {
+                "duration": "Lifetime warranty",
+                "type": "Replacement warranty"
+            },
+            "support": {
+                "availability": "24/7 customer service",
+                "contact": "support@leathercraft.com"
+            }
         },
         {
             "id": 2,
@@ -23,10 +54,41 @@
             "originalPrice": 20749,
             "category": "tech",
             "rating": 5,
+            "reviews": 456,
+            "brand": "TechWatch",
             "image": "https://via.placeholder.com/300x300?text=Smart+Watch",
-            "affiliateLink": "https://amzn.to/dad-gift-1",
+            "images": [
+                "https://via.placeholder.com/600x400?text=Smart+Watch+1",
+                "https://via.placeholder.com/600x400?text=Smart+Watch+2",
+                "https://via.placeholder.com/600x400?text=Smart+Watch+3"
+            ],
+            "affiliateLink": "https://amzn.to/dad-gift-2",
             "youtubeVideo": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-            "description": "Advanced fitness tracking smartwatch"
+            "description": "Advanced fitness tracking smartwatch",
+            "features": [
+                "Heart rate monitoring",
+                "GPS tracking",
+                "Water resistant",
+                "7-day battery life",
+                "Smartphone notifications"
+            ],
+            "delivery": {
+                "time": "2-3 business days",
+                "freeDeliveryThreshold": 499,
+                "expressDelivery": "Available for ₹99"
+            },
+            "returns": {
+                "policy": "15 days return policy",
+                "conditions": "Original packaging required"
+            },
+            "warranty": {
+                "duration": "2 years manufacturer warranty",
+                "type": "Replacement warranty"
+            },
+            "support": {
+                "availability": "24/7 customer service",
+                "contact": "support@techwatch.com"
+            }
         },
         {
             "id": 3,

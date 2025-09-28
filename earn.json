@@ -1,0 +1,412 @@
+{
+    "apps": [
+        {
+            "id": 1,
+            "name": "POP UPI",
+            "type": "app",
+            "logo": "https://play-lh.googleusercontent.com/Br4JLbZotZRd3MawaMPBIf1QRHDJtJCMzUbJSZmJq0Xlhh_9lkjvKo92oo5nvm2bq1J_=s96-rw",
+            "description": "POP UPI is India’s most rewarding UPI app. Send money instantly and earn cash rewards with every transaction.",
+            "rating": 4.6,
+            "reviews": 500000,
+            "reward": 50,
+            "platform": "Android & iOS",
+            "payment": "UPI",
+            "minimum": 1,
+            "support": "24/7 Support",
+            "referralCode": "SH16OLZMOM",
+            "downloadLink": "https://dl.popclub.co/GOVga2pn1Wb",
+            "features": [
+                "Instant UPI transfers",
+                "Earn rewards on transactions",
+                "Secure & reliable payments",
+                "Works across all banks",
+                "User-friendly interface"
+            ],
+            "earningSteps": [
+                "Step 1: Download POP UPI using referral link",
+                "Step 2: Sign up and enter referral code SH16OLZMOM",
+                "Step 3: Send money to anyone via POP UPI",
+                "Step 4: Complete first successful transaction",
+                "Step 5: Earn ₹5 instant cash reward"
+            ],
+            "terms": [
+                "Valid for new users only",
+                "Minimum ₹1 transaction required",
+                "Reward credited instantly",
+                "One reward per referral",
+                "Subject to POP UPI terms and conditions"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "PhonePe",
+            "type": "app",
+            "logo": "https://play-lh.googleusercontent.com/6iyA2zVz5PyyMjK5SIxdUhrb7oh9cYVXJ93q6DZkmx07Er1o90PXYeo6mzL4VC2Gj9s=w240-h480-rw",
+            "description": "PhonePe is India’s go-to app for Money Transfers, Recharges, Bill Payments, and much more. Make instant payments to merchants and contacts using UPI.",
+            "rating": 4.7,
+            "reviews": 10000000,
+            "reward": 200,
+            "platform": "Android & iOS",
+            "payment": "UPI, Cards, Wallet",
+            "minimum": 1,
+            "support": "24/7 Support",
+            "referralCode": "",
+            "downloadLink": "https://phon.pe/mxvndn9t",
+            "features": [
+                "Instant UPI transfers",
+                "Mobile recharges",
+                "Bill payments",
+                "Grocery & food payments",
+                "Secure & reliable transactions"
+            ],
+            "earningSteps": [
+                "Step 1: Download PhonePe using referral link",
+                "Step 2: Register with your mobile number linked to a bank account",
+                "Step 3: Set up your UPI PIN",
+                "Step 4: Make instant payments to merchants or contacts",
+                "Step 5: Enjoy seamless digital transactions"
+            ],
+            "terms": [
+                "Valid for users in India",
+                "Mobile number must be linked to a bank account",
+                "UPI PIN setup required",
+                "One account per user",
+                "Subject to PhonePe terms and conditions"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Slice UPI Savings",
+            "type": "app",
+            "logo": "https://play-lh.googleusercontent.com/FepA9QbIZEBnW7N3u52lpfc6YqyTiioXEodAW6orEpBBoh3aQLE9JSlT3s-kVUdYx_DY=w480-h960-rw",
+            "description": "Slice Savings lets your money earn daily interest at 100% RBI repo rate while you continue to use UPI for payments. Smarter than letting money sit idle in your account.",
+            "rating": 4.4,
+            "reviews": 1000000,
+            "reward": 50,
+            "platform": "Android & iOS",
+            "payment": "UPI",
+            "minimum": 1,
+            "support": "In-app Support",
+            "referralCode": "KOUSH32707",
+            "downloadLink": "https://t.sliceit.com/s?c=wfkAsKH&ic=KOUSH32707",
+            "features": [
+                "Daily interest at 100% RBI repo rate",
+                "Seamless UPI payments",
+                "Track spending and savings in one app",
+                "Instant deposits and withdrawals",
+                "Smart money management features"
+            ],
+            "earningSteps": [
+                "Download the Slice app using referral link",
+                "Sign up and enter referral code KOUSH32707",
+                "Complete KYC verification",
+                "Start using UPI via Slice",
+                "Earn daily interest on your balance"
+            ],
+            "terms": [
+                "Valid only for new users joining via referral link",
+                "Referral code KOUSH32707 must be applied at signup",
+                "Interest credited daily based on repo rate",
+                "Subject to Slice terms and conditions"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Google Pay",
+            "type": "app",
+            "logo": "https://play-lh.googleusercontent.com/0dn-CnZkqyLm5PpjdHBrYR9hvnGDNgoLTe8yfrSaPWUx7ZBVGI4C_18-jL06oNCRRCK3=w480-h960-rw",
+            "description": "Google Pay is India’s leading UPI app for secure payments, recharges, bill payments, and money transfers. Earn cashback rewards on transactions and referrals.",
+            "rating": 4.6,
+            "reviews": 100000000,
+            "reward": 21,
+            "platform": "Android & iOS",
+            "payment": "UPI, Cards, Wallet",
+            "minimum": 1,
+            "support": "In-app Help & Support",
+            "referralCode": "11jm5i",
+            "downloadLink": "https://g.co/payinvite/11jm5i",
+            "features": [
+                "UPI money transfers",
+                "Bill payments and mobile recharges",
+                "Earn scratch cards and cashback",
+                "Secure and fast payments",
+                "Works with major banks in India"
+            ],
+            "earningSteps": [
+                "Download Google Pay using referral link",
+                "Sign up with mobile number linked to your bank account",
+                "Enter referral code 11jm5i",
+                "Complete first UPI payment",
+                "Earn ₹21 cashback reward"
+            ],
+            "terms": [
+                "Valid for new Google Pay users only",
+                "Referral code 11jm5i must be applied at signup",
+                "Cashback credited after first payment",
+                "One referral reward per user",
+                "Subject to Google Pay terms and conditions"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "mPokket",
+            "type": "app",
+            "logo": "https://play-lh.googleusercontent.com/nauYBiewqQjZlJVHeXObsIVn2IYODrxgy8xp4yePyyVE2up8lqL6Q3Lhxyb6TOZeDyUS=s96-rw",
+            "description": "mPokket offers instant cash loans up to ₹30,000 for students and salaried professionals. Get quick approval, instant transfer, and earn cashback on sign-up.",
+            "rating": 4.3,
+            "reviews": 5000000,
+            "reward": 100,
+            "platform": "Android & iOS",
+            "payment": "Loan Disbursement",
+            "minimum": 500,
+            "support": "In-app Help & Support",
+            "referralCode": "REF22919027",
+            "downloadLink": "https://click.mpkt.to/4ZwB/zn8nrhk9",
+            "features": [
+                "Instant personal loans up to ₹30,000",
+                "Easy KYC and quick approval",
+                "Flexible repayment options",
+                "Cashback rewards on referrals",
+                "Available for students and salaried professionals"
+            ],
+            "earningSteps": [
+                "Download mPokket using referral link",
+                "Sign up with your mobile number",
+                "Enter referral code REF22919027",
+                "Complete KYC verification",
+                "Get ₹100 cashback after first loan disbursement"
+            ],
+            "terms": [
+                "Valid for new users only",
+                "Referral code REF22919027 must be entered at sign-up",
+                "Cashback credited after first successful loan",
+                "Loan approval subject to eligibility and credit check",
+                "Terms and conditions apply"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "MobiKwik UPI",
+            "type": "app",
+            "logo": "https://play-lh.googleusercontent.com/2BeyF9fe_EHGDM5x1vRaiVYYNEN4G30eDVy1VgyRAkTgDUU8rGcMW63l28Tp_Jhg_sk=s96-rw",
+            "description": "MobiKwik is a leading digital payments app offering UPI transfers, wallet, and bill payments. Earn cashback rewards by making your first UPI transaction.",
+            "rating": 4.4,
+            "reviews": 10000000,
+            "reward": 20,
+            "platform": "Android & iOS",
+            "payment": "UPI, Wallet, Cards",
+            "minimum": 25,
+            "support": "24/7 In-App Support",
+            "referralCode": null,
+            "downloadLink": "https://w6em.app.link/kNylVEjp1Wb",
+            "features": [
+                "Send and receive money via UPI instantly",
+                "Recharge, pay bills, and shop online",
+                "Earn cashback rewards on transactions",
+                "Refer friends to earn extra cashback",
+                "Safe and secure transactions"
+            ],
+            "earningSteps": [
+                "Download the MobiKwik app using referral link",
+                "Setup MobiKwik UPI and complete KYC",
+                "Send ₹25 to any friend via UPI",
+                "Get ₹20 cashback in your wallet",
+                "Refer friends to earn more cashback"
+            ],
+            "terms": [
+                "Valid for new users only",
+                "Minimum ₹25 transaction required",
+                "Cashback credited within specified time",
+                "Referral rewards applicable per successful referral",
+                "Terms and conditions apply"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Rapido",
+            "type": "app",
+            "logo": "https://play-lh.googleusercontent.com/rpWjr-6s3EYPXUD7IDDB1fb0hxr75C76mIYVHpAILvzyPZwmQLZasAhitE0P3el8Dw=s96-rw",
+            "description": "Rapido is India’s largest bike-taxi and auto service, offering affordable, comfortable, and quick rides in 100+ cities. Earn cashback rewards on your first ride.",
+            "rating": 4.4,
+            "reviews": 10000000,
+            "reward": 25,
+            "platform": "Android & iOS",
+            "payment": "UPI, Wallet, Cards, Cash",
+            "minimum": 1,
+            "support": "24/7 In-App Support",
+            "referralCode": "CN415QG",
+            "downloadLink": "https://m.rapido.cc/Ewte/0b3auphc",
+            "features": [
+                "Affordable bike-taxi and auto rides",
+                "Available in 100+ cities across India",
+                "Quick pickups with trained captains",
+                "Cashback and discounts on rides",
+                "Multiple payment options including cash and UPI"
+            ],
+            "earningSteps": [
+                "Download the Rapido app using referral link",
+                "Sign up and enter referral code CN415QG",
+                "Book your first ride with Rapido",
+                "Complete payment using any method",
+                "Get ₹25 cashback in your wallet"
+            ],
+            "terms": [
+                "Valid for new users only",
+                "Referral code CN415QG must be applied at signup",
+                "Cashback credited after first completed ride",
+                "Offer applicable in selected cities",
+                "Terms and conditions apply"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Uber Rides",
+            "type": "app",
+            "logo": "https://play-lh.googleusercontent.com/arkKgCKdxknwWuPfRm71rfZNS-Jj5GPhEyPDzowExEhZrIl6QOhBHyQro2-I4UKeVvM=w480-h960-rw",
+            "description": "Uber is a global ride-hailing app offering affordable and convenient trips with bike, auto, and car options. New users get discounts on their first rides.",
+            "rating": 4.5,
+            "reviews": 100000000,
+            "reward": "25% off (first 3 trips)",
+            "platform": "Android & iOS",
+            "payment": "UPI, Wallet, Cards, Cash",
+            "minimum": 1,
+            "support": "24/7 In-App Help & Support",
+            "referralCode": null,
+            "downloadLink": "https://referrals.uber.com/refer?id=yegfs7v4v99k",
+            "features": [
+                "Affordable rides with bike, auto, and car options",
+                "Available in 10,000+ cities worldwide",
+                "Safe and verified driver-partners",
+                "Multiple payment options including cash, UPI, and cards",
+                "Discounts and offers for new users"
+            ],
+            "earningSteps": [
+                "Download the Uber app using referral link",
+                "Sign up with your mobile number or email",
+                "Book your first ride with Uber",
+                "Apply referral offer automatically",
+                "Enjoy 25% off on your first 3 trips"
+            ],
+            "terms": [
+                "Valid for new users only",
+                "Offer applicable on first 3 rides only",
+                "Maximum discount per ride may apply",
+                "Referral discount applied automatically",
+                "Terms and conditions apply"
+            ]
+        },
+        {
+            "id": 9,
+            "name": "RedBus",
+            "type": "app",
+            "logo": "https://play-lh.googleusercontent.com/5ZxVI65M9_yQQHgsY2f_lvSFD9E4Oqvfgxkg-E-MZwWt1M65-6HLY3twREAubQtZqqo",
+            "description": "RedBus is India’s No.1 online bus ticket booking platform with widest bus network. Book bus tickets easily and enjoy discounts & cashback on your first booking.",
+            "rating": 4.3,
+            "reviews": 10000000,
+            "reward": "₹100 Cashback + 20% off",
+            "platform": "Android & iOS",
+            "payment": "UPI, Wallet, Cards, Netbanking",
+            "minimum": 100,
+            "support": "24/7 In-App Support",
+            "referralCode": "redofele",
+            "downloadLink": "https://m6pe.app.link/referral_onboarding2?referralCode=redofele&referralAmount=0",
+            "features": [
+                "Book bus tickets across 2500+ operators",
+                "Exclusive discounts on first booking",
+                "Multiple payment options for convenience",
+                "Track buses live with GPS",
+                "Cashback and referral rewards"
+            ],
+            "earningSteps": [
+                "Download the RedBus app using referral link",
+                "Sign up with your mobile number",
+                "Enter referral code redofele at sign-up",
+                "Book your first bus ticket using code FIRST",
+                "Get 20% off (up to ₹150) + ₹100 cashback"
+            ],
+            "terms": [
+                "Valid for new users only",
+                "Referral code redofele must be entered at signup",
+                "Promo code FIRST applies on first booking",
+                "Cashback credited after first successful booking",
+                "Terms and conditions apply"
+            ]
+        }
+    ],
+    "creditCards": [
+        {
+            "id": 1,
+            "name": "Edge+ CSB Bank RuPay Credit Card",
+            "type": "creditCard",
+            "logo": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9d/c2/f2/9dc2f2fc-8697-f3b3-94ef-ef69c4ca7f40/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/434x0w.webp",
+            "description": "The Edge+ CSB Bank RuPay Credit Card offers up to 10% cashback on shopping, 5% cashback on travel, and 1% cashback on all other spends. It is lifetime free with ₹0 annual fees.",
+            "rating": 4.5,
+            "reviews": 500000,
+            "reward": 500,
+            "platform": "Jupiter App (Android & iOS)",
+            "payment": "UPI, RuPay Credit Card",
+            "minimum": 0,
+            "support": "24/7 Support",
+            "referralCode": "8c8K2N",
+            "downloadLink": "https://jupite.onelink.me/BtOj/av0fcug6",
+            "features": [
+                "10% cashback on shopping brands",
+                "5% cashback on travel platforms",
+                "1% assured cashback on all other spends",
+                "Works seamlessly on UPI & POS transactions",
+                "Lifetime free card with ₹0 annual fees"
+            ],
+            "earningSteps": [
+                "Apply for Edge+ CSB Bank RuPay Credit Card via Jupiter app using referral link",
+                "Enter referral code 8c8K2N within 14 days",
+                "Complete KYC verification",
+                "Get your card approved and activated",
+                "Receive ₹500 cashback as joining reward"
+            ],
+            "terms": [
+                "Valid only for new applicants via referral link",
+                "Referral code 8c8K2N must be applied within 14 days",
+                "₹500 cashback credited after successful card issuance",
+                "Lifetime free card – no annual fees",
+                "Subject to CSB Bank & Jupiter terms and conditions"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "SuperMoney Credit Card",
+            "type": "creditCard",
+            "logo": "https://play-lh.googleusercontent.com/xb5kyKVpbNeeJlx3bKlUPcF_vJH6sel0c3FlyZ_KNx2cZtjEj-1pGGYOLHa-39LlXnY=w480-h960-rw",
+            "description": "The SuperMoney Credit Card offers a flat 3% cashback on all UPI spends. It is lifetime free with no annual charges, plus you can earn up to ₹250 cashback as a joining reward.",
+            "rating": 4.6,
+            "reviews": 200000,
+            "reward": 250,
+            "platform": "SuperMoney App (Android & iOS)",
+            "payment": "UPI, Credit Card",
+            "minimum": 0,
+            "support": "In-app & Email Support",
+            "referralCode": "N/A",
+            "downloadLink": "https://link.super.money/rWk7JJefPUb",
+            "features": [
+                "Flat 3% cashback on all UPI spends",
+                "Lifetime free – ₹0 annual fees",
+                "Earn up to ₹250 joining cashback",
+                "No hidden charges or conditions",
+                "Works seamlessly with UPI-linked apps"
+            ],
+            "earningSteps": [
+                "Apply for SuperMoney Credit Card using referral link",
+                "Complete KYC verification process",
+                "Get your card approved and activated",
+                "Start making UPI spends using your SuperMoney card",
+                "Receive up to ₹250 cashback as welcome reward"
+            ],
+            "terms": [
+                "Offer valid only via referral link",
+                "Cashback credited after first successful spend",
+                "Joining reward up to ₹250 depends on eligibility",
+                "Lifetime free card – no annual fees",
+                "Subject to SuperMoney terms and conditions"
+            ]
+        }
+    ]
+}

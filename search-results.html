@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - Deal-Snatcher</title>
+    <meta name="description" content="Search results for products, gifts, and earning opportunities on Deal-Snatcher">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#fef2f2',
+                            100: '#fee2e2',
+                            200: '#fecaca',
+                            300: '#fca5a5',
+                            400: '#f87171',
+                            500: '#DC2626',
+                            600: '#dc2626',
+                            700: '#b91c1c',
+                            800: '#991b1b',
+                            900: '#7f1d1d',
+                        }
+                    }
+                }
+            },
+            darkMode: 'class'
+        }
+    </script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <style>
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors">
+    <!-- Header -->
+    <header class="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="flex items-center hover:opacity-80 transition-opacity">
+                    <img src="images/deal-snatcher-logo.png" alt="Deal-Snatcher Logo" class="h-10 w-auto mr-3">
+                    <div>
+                        <h1 class="text-2xl font-bold text-primary-500 dark:text-primary-400">Deal-Snatcher</h1>
+                    </div>
+                </a>
+
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="index.html"
+                        class="text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">Home</a>
+                    <a href="gift-guide.html"
+                        class="text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">Gift
+                        Guide</a>
+                    <a href="earn.html"
+                        class="text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">Earn</a>
+                    <a href="about.html"
+                        class="text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">About</a>
+                </nav>
+
+                <div class="flex items-center space-x-4">
+                    <!-- Search Bar -->
+                    <div class="hidden md:block relative">
+                        <input type="text" id="navSearchInput" placeholder="Search products..."
+                            class="w-64 pl-10 pr-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                        <i
+                            class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 dark:text-gray-500"></i>
+                    </div>
+
+                    <!-- Theme Toggle -->
+                    <button id="themeToggle"
+                        class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:inline"></i>
+                    </button>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button id="mobileMenuToggle"
+                        class="md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="md:hidden hidden border-t border-gray-200 dark:border-gray-700 py-4">
+                <!-- Mobile Search -->
+                <div class="mb-4">
+                    <div class="relative">
+                        <input type="text" id="mobileNavSearchInput" placeholder="Search products..."
+                            class="w-full pl-10 pr-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                        <i
+                            class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 dark:text-gray-500"></i>
+                    </div>
+                </div>
+
+                <nav class="space-y-2">
+                    <a href="index.html"
+                        class="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">Home</a>
+                    <a href="gift-guide.html"
+                        class="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">Gift
+                        Guide</a>
+                    <a href="earn.html"
+                        class="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">Earn</a>
+                    <a href="about.html"
+                        class="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">About</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Search Header -->
+        <div class="mb-8">
+            <div class="flex items-center justify-between mb-4">
+                <h1 class="text-3xl font-bold text-gray-900 dark:text-gray-100">Search Results</h1>
+                <button onclick="goBack()"
+                    class="text-primary-500 hover:text-primary-600 dark:text-primary-400 dark:hover:text-primary-300 transition-colors">
+                    <i class="fas fa-arrow-left mr-2"></i>Back
+                </button>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-search text-gray-400 dark:text-gray-500"></i>
+                    <div>
+                        <p class="text-gray-600 dark:text-gray-400">Searching for:</p>
+                        <p class="text-xl font-semibold text-gray-900 dark:text-gray-100" id="searchTerm"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Suggestions -->
+        <div id="searchSuggestions" class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">Suggestions</h2>
+            <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+                <div id="suggestionsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- Suggestions will be populated here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Results -->
+        <div id="searchResults" class="space-y-6">
+            <!-- Results will be populated here -->
+        </div>
+
+        <!-- No Results Message -->
+        <div id="noResults" class="hidden text-center py-12">
+            <div class="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-sm">
+                <i class="fas fa-search text-6xl text-gray-300 dark:text-gray-600 mb-4"></i>
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">No Results Found</h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">Try searching with different keywords or browse our
+                    categories.</p>
+                <a href="index.html"
+                    class="bg-primary-500 text-white px-6 py-3 rounded-lg hover:bg-primary-600 transition-colors">
+                    Browse All Products
+                </a>
+            </div>
+        </div>
+
+        <!-- Loading Spinner -->
+        <div id="loadingSpinner" class="text-center py-12">
+            <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-primary-500"></div>
+            <p class="mt-2 text-gray-600 dark:text-gray-400">Searching...</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="images/deal-snatcher-logo.png" alt="Deal-Snatcher" class="h-8 w-auto mr-3">
+                        <h3 class="text-xl font-bold">Deal-Snatcher</h3>
+                    </div>
+                    <p class="text-gray-400">Discover amazing products, cool gadgets, and unique items at great prices!
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="gift-guide.html" class="hover:text-white">Gift Guide</a></li>
+                        <li><a href="earn.html" class="hover:text-white">Earn Money</a></li>
+                        <li><a href="about.html" class="hover:text-white">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+                        <li><a href="faq.html" class="hover:text-white">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Deal-Snatcher. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="global-search.js"></script>
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        html.classList.toggle('dark', currentTheme === 'dark');
+
+        themeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            const newTheme = html.classList.contains('dark') ? 'dark' : 'light';
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // Mobile menu toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Search functionality
+        const navSearchInput = document.getElementById('navSearchInput');
+        const mobileNavSearchInput = document.getElementById('mobileNavSearchInput');
+
+        function handleNavSearch() {
+            const searchTerm = (navSearchInput?.value || mobileNavSearchInput?.value || '').trim();
+            if (searchTerm) {
+                sessionStorage.setItem('globalSearchTerm', searchTerm);
+                window.location.href = 'search-results.html';
+            }
+        }
+
+        if (navSearchInput) {
+            navSearchInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') handleNavSearch();
+            });
+        }
+
+        if (mobileNavSearchInput) {
+            mobileNavSearchInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') handleNavSearch();
+            });
+        }
+
+        // Load search results
+        document.addEventListener('DOMContentLoaded', async () => {
+            const searchTerm = sessionStorage.getItem('globalSearchTerm');
+            if (!searchTerm) {
+                window.location.href = 'index.html';
+                return;
+            }
+
+            // Display search term
+            document.getElementById('searchTerm').textContent = `"${searchTerm}"`;
+
+            // Show loading spinner
+            document.getElementById('loadingSpinner').classList.remove('hidden');
+            document.getElementById('searchResults').classList.add('hidden');
+            document.getElementById('noResults').classList.add('hidden');
+
+            // Wait for global search to be ready
+            await new Promise(resolve => {
+                const checkReady = () => {
+                    if (window.globalSearch && window.globalSearch.searchData) {
+                        resolve();
+                    } else {
+                        setTimeout(checkReady, 100);
+                    }
+                };
+                checkReady();
+            });
+
+            // Perform search
+            console.log('Performing search for:', searchTerm);
+            const results = window.globalSearch.searchAllData(searchTerm);
+            console.log('Search results:', results);
+
+            // Hide loading spinner
+            document.getElementById('loadingSpinner').classList.add('hidden');
+
+            if (results.length === 0) {
+                document.getElementById('noResults').classList.remove('hidden');
+            } else {
+                displayResults(results);
+            }
+
+            // Display suggestions
+            displaySuggestions(searchTerm);
+        });
+
+        function displayResults(results) {
+            const resultsContainer = document.getElementById('searchResults');
+            resultsContainer.classList.remove('hidden');
+
+            // Group results by category
+            const groupedResults = results.reduce((acc, result) => {
+                if (!acc[result.category]) {
+                    acc[result.category] = [];
+                }
+                acc[result.category].push(result);
+                return acc;
+            }, {});
+
+            // Display grouped results
+            Object.entries(groupedResults).forEach(([category, categoryResults]) => {
+                const categorySection = document.createElement('div');
+                categorySection.className = 'bg-white dark:bg-gray-800 rounded-lg shadow-sm overflow-hidden';
+
+                const categoryHeader = document.createElement('div');
+                categoryHeader.className = 'bg-gray-50 dark:bg-gray-700 px-6 py-4 border-b border-gray-200 dark:border-gray-600';
+                categoryHeader.innerHTML = `
+                    <h2 class="text-xl font-semibold text-gray-900 dark:text-gray-100">${category}</h2>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">${categoryResults.length} result${categoryResults.length !== 1 ? 's' : ''}</p>
+                `;
+
+                const resultsGrid = document.createElement('div');
+                resultsGrid.className = 'p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6';
+
+                categoryResults.forEach(result => {
+                    const resultCard = document.createElement('a');
+                    resultCard.href = result.link;
+                    resultCard.className = 'block bg-gray-50 dark:bg-gray-700 rounded-lg p-4 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors';
+
+                    resultCard.innerHTML = `
+                        <div class="flex items-start space-x-4">
+                            ${result.image ? `<img src="${result.image}" alt="${result.title}" class="w-16 h-16 object-cover rounded-lg">` : ''}
+                            <div class="flex-1 min-w-0">
+                                <h3 class="font-semibold text-gray-900 dark:text-gray-100 truncate">${result.title}</h3>
+                                <p class="text-sm text-gray-600 dark:text-gray-400 mt-1 line-clamp-2">${result.description}</p>
+                                ${result.price ? `<p class="text-primary-500 font-semibold mt-2">${result.price}</p>` : ''}
+                                ${result.reward ? `<p class="text-green-500 font-semibold mt-2">Earn: ${result.reward}</p>` : ''}
+                            </div>
+                        </div>
+                    `;
+
+                    resultsGrid.appendChild(resultCard);
+                });
+
+                categorySection.appendChild(categoryHeader);
+                categorySection.appendChild(resultsGrid);
+                resultsContainer.appendChild(categorySection);
+            });
+        }
+
+        function displaySuggestions(searchTerm) {
+            const suggestionsContainer = document.getElementById('suggestionsGrid');
+            if (!suggestionsContainer) return;
+
+            // Generate suggestions using the global search
+            const suggestions = window.globalSearch.generateSuggestions(searchTerm);
+
+            if (suggestions.length === 0) {
+                document.getElementById('searchSuggestions').classList.add('hidden');
+                return;
+            }
+
+            suggestionsContainer.innerHTML = '';
+
+            suggestions.forEach(suggestion => {
+                const suggestionCard = document.createElement('div');
+                suggestionCard.className = 'bg-gray-50 dark:bg-gray-700 rounded-lg p-4 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors cursor-pointer';
+
+                suggestionCard.innerHTML = `
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center">
+                            <i class="${suggestion.icon} text-primary-500 dark:text-primary-400"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <h3 class="font-medium text-gray-900 dark:text-gray-100 truncate">${suggestion.title}</h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-400 truncate">${suggestion.description}</p>
+                        </div>
+                        <i class="fas fa-arrow-right text-gray-400 dark:text-gray-500"></i>
+                    </div>
+                `;
+
+                suggestionCard.addEventListener('click', () => {
+                    if (suggestion.link) {
+                        window.location.href = suggestion.link;
+                    } else if (suggestion.searchTerm) {
+                        sessionStorage.setItem('globalSearchTerm', suggestion.searchTerm);
+                        window.location.href = 'search-results.html';
+                    }
+                });
+
+                suggestionsContainer.appendChild(suggestionCard);
+            });
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>

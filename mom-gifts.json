@@ -11,11 +11,41 @@
             "originalPrice": 9960,
             "category": "jewelry",
             "rating": 5,
+            "reviews": 89,
+            "brand": "PearlLux",
             "image": "https://via.placeholder.com/300x300?text=Pearl+Necklace",
+            "images": [
+                "https://via.placeholder.com/600x400?text=Pearl+Necklace+1",
+                "https://via.placeholder.com/600x400?text=Pearl+Necklace+2",
+                "https://via.placeholder.com/600x400?text=Pearl+Necklace+3"
+            ],
             "affiliateLink": "https://amzn.to/mom-gift-1",
             "youtubeVideo": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-            "youtubeVideo": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-            "description": "Elegant pearl necklace with matching earrings"
+            "description": "Elegant pearl necklace with matching earrings",
+            "features": [
+                "Genuine freshwater pearls",
+                "Sterling silver clasp",
+                "Matching earrings included",
+                "Elegant gift box packaging",
+                "Certificate of authenticity"
+            ],
+            "delivery": {
+                "time": "3-5 business days",
+                "freeDeliveryThreshold": 499,
+                "expressDelivery": "Available for ₹99"
+            },
+            "returns": {
+                "policy": "15 days return policy",
+                "conditions": "Original packaging required"
+            },
+            "warranty": {
+                "duration": "1 year manufacturer warranty",
+                "type": "Replacement warranty"
+            },
+            "support": {
+                "availability": "24/7 customer service",
+                "contact": "support@pearllux.com"
+            }
         },
         {
             "id": 2,
@@ -24,10 +54,41 @@
             "originalPrice": 20749,
             "category": "jewelry",
             "rating": 5,
+            "reviews": 156,
+            "brand": "DiamondLux",
             "image": "https://via.placeholder.com/300x300?text=Diamond+Heart",
-            "affiliateLink": "https://amzn.to/mom-gift-1",
+            "images": [
+                "https://via.placeholder.com/600x400?text=Diamond+Heart+1",
+                "https://via.placeholder.com/600x400?text=Diamond+Heart+2",
+                "https://via.placeholder.com/600x400?text=Diamond+Heart+3"
+            ],
+            "affiliateLink": "https://amzn.to/mom-gift-2",
             "youtubeVideo": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-            "description": "Beautiful diamond heart pendant on gold chain"
+            "description": "Beautiful diamond heart pendant on gold chain",
+            "features": [
+                "Genuine diamond stones",
+                "18K gold chain",
+                "Heart-shaped design",
+                "Elegant gift box",
+                "Certificate of authenticity"
+            ],
+            "delivery": {
+                "time": "3-5 business days",
+                "freeDeliveryThreshold": 499,
+                "expressDelivery": "Available for ₹99"
+            },
+            "returns": {
+                "policy": "15 days return policy",
+                "conditions": "Original packaging required"
+            },
+            "warranty": {
+                "duration": "1 year manufacturer warranty",
+                "type": "Replacement warranty"
+            },
+            "support": {
+                "availability": "24/7 customer service",
+                "contact": "support@diamondlux.com"
+            }
         },
         {
             "id": 3,
@@ -36,10 +97,41 @@
             "originalPrice": 7885,
             "category": "jewelry",
             "rating": 4,
+            "reviews": 127,
+            "brand": "RoseGoldLux",
             "image": "https://via.placeholder.com/300x300?text=Rose+Gold+Bracelet",
-            "affiliateLink": "https://amzn.to/mom-gift-1",
+            "images": [
+                "https://via.placeholder.com/600x400?text=Rose+Gold+Bracelet+1",
+                "https://via.placeholder.com/600x400?text=Rose+Gold+Bracelet+2",
+                "https://via.placeholder.com/600x400?text=Rose+Gold+Bracelet+3"
+            ],
+            "affiliateLink": "https://amzn.to/mom-gift-3",
             "youtubeVideo": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-            "description": "Delicate rose gold bracelet with charm"
+            "description": "Delicate rose gold bracelet with charm",
+            "features": [
+                "Rose gold plated",
+                "Adjustable size",
+                "Charm included",
+                "Gift box included",
+                "Hypoallergenic material"
+            ],
+            "delivery": {
+                "time": "3-5 business days",
+                "freeDeliveryThreshold": 499,
+                "expressDelivery": "Available for ₹99"
+            },
+            "returns": {
+                "policy": "15 days return policy",
+                "conditions": "Original packaging required"
+            },
+            "warranty": {
+                "duration": "1 year manufacturer warranty",
+                "type": "Replacement warranty"
+            },
+            "support": {
+                "availability": "24/7 customer service",
+                "contact": "support@rosegoldlux.com"
+            }
         },
         {
             "id": 4,

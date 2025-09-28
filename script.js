@@ -6,14 +6,14 @@ let displayedCount = 8;
 
 // DOM elements
 const productsGrid = document.getElementById('productsGrid');
-const searchInput = document.getElementById('searchInput');
+const searchInput = document.getElementById('searchInput'); // May be null if main search removed
 const navSearchInput = document.getElementById('navSearchInput');
 const mobileNavSearchInput = document.getElementById('mobileNavSearchInput');
 const filterButtons = document.querySelectorAll('.filter-btn');
 const sortSelect = document.getElementById('sortSelect');
 const loadMoreBtn = document.getElementById('loadMoreBtn');
 const productModal = document.getElementById('productModal');
-const closeModal = document.getElementById('closeModal');
+const closeModalBtn = document.getElementById('closeModalBtn');
 const themeToggle = document.getElementById('themeToggle');
 const themeIcon = document.getElementById('themeIcon');
 const mobileMenuToggle = document.getElementById('mobileMenuToggle');
@@ -92,6 +92,26 @@ function toggleMobileMenu() {
     mobileMenu.classList.toggle('hidden');
 }
 
+// Check for direct product access from search
+function checkForDirectProductAccess() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const productName = urlParams.get('item');
+
+    if (productName && products.length > 0) {
+        const foundProduct = products.find(product =>
+            product.title.toLowerCase().includes(productName.toLowerCase()) ||
+            productName.toLowerCase().includes(product.title.toLowerCase())
+        );
+
+        if (foundProduct) {
+            // Open the modal for the found product
+            setTimeout(() => {
+                openProductModal(foundProduct);
+            }, 500); // Small delay to ensure page is loaded
+        }
+    }
+}
+
 // Initialize the page
 document.addEventListener('DOMContentLoaded', async function () {
     // Initialize theme
@@ -109,6 +129,9 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         // Handle URL parameters
         handleURLParameters();
+
+        // Check for direct product access from search
+        checkForDirectProductAccess();
     } else {
         // Show error message if products couldn't be loaded
         if (productsGrid) {
@@ -286,8 +309,8 @@ function setupEventListeners() {
     }
 
     // Modal functionality
-    if (closeModal) {
-        closeModal.addEventListener('click', closeProductModal);
+    if (closeModalBtn) {
+        closeModalBtn.addEventListener('click', closeProductModal);
     }
     if (productModal) {
         productModal.addEventListener('click', (e) => {
@@ -296,10 +319,19 @@ function setupEventListeners() {
             }
         });
     }
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !productModal.classList.contains('hidden')) {
+            closeProductModal();
+        }
+    });
 }
 
 // Handle search
 function handleSearch() {
+    if (!searchInput) return; // Exit if main search input doesn't exist
+
     const searchTerm = searchInput.value.toLowerCase();
     const filteredProducts = products.filter(product =>
         product.title.toLowerCase().includes(searchTerm) ||
@@ -411,7 +443,9 @@ function handleCategoryFilter(link) {
     }
 
     // Clear search input
-    searchInput.value = '';
+    if (searchInput) {
+        searchInput.value = '';
+    }
 
     displayedCount = 8;
     displayProducts(currentProducts.slice(0, displayedCount));
@@ -466,10 +500,26 @@ function openProductModal(product) {
     // Set main product info
     document.getElementById('modalMainImage').src = product.image;
     document.getElementById('modalTitle').textContent = product.title;
-    document.getElementById('modalDescription').textContent = product.description;
+    document.getElementById('modalProductTitle').textContent = product.title;
     document.getElementById('modalPrice').textContent = `₹${formatNumber(product.price)}`;
     document.getElementById('modalOriginalPrice').textContent = `₹${formatNumber(product.originalPrice)}`;
     document.getElementById('modalBrand').textContent = product.brand || 'Brand';
+
+    // Calculate and display discount
+    const discount = Math.round((1 - product.price / product.originalPrice) * 100);
+    document.getElementById('modalDiscount').textContent = `${discount}% OFF`;
+
+    // Set rating and reviews
+    const ratingElement = document.getElementById('modalRating');
+    const rating = Math.floor(product.rating);
+    ratingElement.innerHTML = '';
+    for (let i = 0; i < 5; i++) {
+        const star = document.createElement('i');
+        star.className = i < rating ? 'fas fa-star' : 'far fa-star';
+        ratingElement.appendChild(star);
+    }
+    document.getElementById('modalRatingText').textContent = `${product.rating} out of 5`;
+    document.getElementById('modalReviews').textContent = `(${product.reviews} reviews)`;
 
     // Set affiliate link
     const buyNowBtn = document.getElementById('buyNowBtn');
@@ -498,7 +548,7 @@ function openProductModal(product) {
             const thumbnail = document.createElement('img');
             thumbnail.src = imageUrl;
             thumbnail.alt = `${product.title} - Image ${index + 1}`;
-            thumbnail.className = 'w-16 h-16 object-cover rounded cursor-pointer border-2 border-transparent hover:border-primary transition-colors';
+            thumbnail.className = 'w-16 h-16 object-contain bg-gray-100 rounded cursor-pointer border-2 border-transparent hover:border-primary transition-colors';
             thumbnail.onclick = () => {
                 document.getElementById('modalMainImage').src = imageUrl;
                 // Update active thumbnail
@@ -524,6 +574,7 @@ function openProductModal(product) {
         const videoId = extractYouTubeId(product.youtubeVideo);
         if (videoId) {
             youtubeVideo.src = `https://www.youtube.com/embed/${videoId}`;
+            youtubeSection.classList.remove('hidden');
             watchVideoBtn.classList.remove('hidden');
             watchVideoBtn.onclick = () => {
                 // Open YouTube video in new tab with autoplay
@@ -535,6 +586,34 @@ function openProductModal(product) {
         youtubeSection.classList.add('hidden');
         watchVideoBtn.classList.add('hidden');
     }
+
+    // Set About the Product section
+    document.getElementById('modalAboutDescription').textContent = product.description;
+
+    // Set About Features
+    const aboutFeaturesElement = document.getElementById('modalAboutFeatures');
+    aboutFeaturesElement.innerHTML = '';
+    product.features.forEach(feature => {
+        const li = document.createElement('li');
+        li.innerHTML = `<i class="fas fa-check text-green-500 mr-2"></i>${feature}`;
+        aboutFeaturesElement.appendChild(li);
+    });
+
+    // Set Specifications
+    const specificationsElement = document.getElementById('modalSpecifications');
+    specificationsElement.innerHTML = `
+        <div class="flex justify-between"><span>Brand:</span><span>${product.brand || 'N/A'}</span></div>
+        <div class="flex justify-between"><span>Category:</span><span>${product.category || 'N/A'}</span></div>
+        <div class="flex justify-between"><span>Rating:</span><span>${product.rating || 'N/A'} ⭐</span></div>
+        <div class="flex justify-between"><span>Reviews:</span><span>${product.reviews || 'N/A'}</span></div>
+        <div class="flex justify-between"><span>Availability:</span><span class="text-green-600">${product.availability || 'In Stock'}</span></div>
+    `;
+
+    // Set additional info from JSON data
+    document.getElementById('modalDeliveryTime').textContent = product.delivery?.time || '2-3 business days';
+    document.getElementById('modalReturnPolicy').textContent = product.returns?.policy || '7 days return policy';
+    document.getElementById('modalWarranty').textContent = product.warranty?.duration || '1 year manufacturer';
+    document.getElementById('modalSupport').textContent = product.support?.availability || '24/7 customer service';
 
     productModal.classList.remove('hidden');
     document.body.style.overflow = 'hidden';

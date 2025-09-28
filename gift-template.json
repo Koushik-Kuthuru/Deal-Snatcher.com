@@ -1,0 +1,51 @@
+{
+    "category": "gift-category",
+    "title": "Gifts for Category",
+    "description": "Perfect gifts for your loved ones",
+    "heroColor": "from-blue-500 via-indigo-500 to-purple-500",
+    "products": [
+        {
+            "id": 1,
+            "name": "Product Name",
+            "price": 9999,
+            "originalPrice": 14999,
+            "category": "product-category",
+            "rating": 4.5,
+            "reviews": 150,
+            "brand": "Brand Name",
+            "image": "https://via.placeholder.com/300x300?text=Product+Name",
+            "images": [
+                "https://via.placeholder.com/600x400?text=Product+Name+1",
+                "https://via.placeholder.com/600x400?text=Product+Name+2",
+                "https://via.placeholder.com/600x400?text=Product+Name+3"
+            ],
+            "affiliateLink": "https://amzn.to/your-affiliate-link",
+            "youtubeVideo": "https://www.youtube.com/watch?v=VIDEO_ID",
+            "description": "Detailed product description",
+            "features": [
+                "Feature 1: Description of first key feature",
+                "Feature 2: Description of second key feature",
+                "Feature 3: Description of third key feature",
+                "Feature 4: Description of fourth key feature",
+                "Feature 5: Description of fifth key feature"
+            ],
+            "delivery": {
+                "time": "2-3 business days",
+                "freeDeliveryThreshold": 499,
+                "expressDelivery": "Available for ₹99"
+            },
+            "returns": {
+                "policy": "7 days return policy",
+                "conditions": "Original packaging required"
+            },
+            "warranty": {
+                "duration": "1 year manufacturer warranty",
+                "type": "Replacement warranty"
+            },
+            "support": {
+                "availability": "24/7 customer service",
+                "contact": "support@brand.com"
+            }
+        }
+    ]
+}

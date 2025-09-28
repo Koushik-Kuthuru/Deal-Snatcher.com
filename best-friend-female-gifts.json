@@ -7,90 +7,362 @@
         {
             "id": 1,
             "name": "Spa Day Package",
+            "title": "Spa Day Package",
             "price": 16517,
             "originalPrice": 20749,
             "category": "spa",
             "rating": 5,
-            "image": "https://via.placeholder.com/300x300?text=Spa+Day+Package",
+            "reviews": 128,
+            "brand": "LuxurySpa",
+            "availability": "in-stock",
+            "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=400&h=300&fit=crop",
+            "images": [
+                "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1596178060819-4e8aa92917d3?w=600&h=400&fit=crop"
+            ],
+            "youtubeVideo": "",
             "affiliateLink": "https://amzn.to/best-friend-female-1",
-            "description": "Relaxing spa day for two best friends"
+            "description": "Relaxing spa day for two best friends. Includes massage, facial, and relaxation treatments.",
+            "features": [
+                "Professional massage therapy",
+                "Luxury facial treatment",
+                "Relaxation room access",
+                "Complimentary refreshments",
+                "2-hour spa experience"
+            ],
+            "delivery": {
+                "time": "1-2 business days",
+                "freeDeliveryThreshold": 999,
+                "expressDelivery": "Available for ₹199"
+            },
+            "returns": {
+                "policy": "7 days return policy",
+                "conditions": "Booking confirmation required"
+            },
+            "warranty": {
+                "duration": "Service guarantee",
+                "type": "Quality assurance"
+            },
+            "support": {
+                "availability": "24/7 customer service",
+                "contact": "support@luxuryspa.com"
+            }
         },
         {
             "id": 2,
             "name": "Matching Jewelry Set",
+            "title": "Matching Jewelry Set",
             "price": 89,
             "originalPrice": 120,
             "category": "jewelry",
             "rating": 5,
-            "image": "https://via.placeholder.com/300x300?text=Matching+Jewelry",
-            "affiliateLink": "https://amzn.to/best-friend-female-1",
-            "description": "Beautiful matching jewelry for best friends"
+            "reviews": 89,
+            "brand": "JewelCraft",
+            "availability": "in-stock",
+            "image": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&h=300&fit=crop",
+            "images": [
+                "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&h=400&fit=crop"
+            ],
+            "youtubeVideo": "",
+            "affiliateLink": "https://amzn.to/best-friend-female-2",
+            "description": "Beautiful matching jewelry for best friends. Elegant design perfect for special occasions.",
+            "features": [
+                "Sterling silver material",
+                "Matching necklace and bracelet set",
+                "Elegant gift box included",
+                "Hypoallergenic materials",
+                "Perfect for special occasions"
+            ],
+            "delivery": {
+                "time": "2-3 business days",
+                "freeDeliveryThreshold": 499,
+                "expressDelivery": "Available for ₹99"
+            },
+            "returns": {
+                "policy": "15 days return policy",
+                "conditions": "Original packaging required"
+            },
+            "warranty": {
+                "duration": "1 year manufacturer warranty",
+                "type": "Replacement warranty"
+            },
+            "support": {
+                "availability": "24/7 customer service",
+                "contact": "support@jewelcraft.com"
+            }
         },
         {
             "id": 3,
             "name": "Photo Memory Book",
+            "title": "Photo Memory Book",
             "price": 55,
             "originalPrice": 75,
             "category": "personalized",
             "rating": 4,
-            "image": "https://via.placeholder.com/300x300?text=Photo+Memory+Book",
-            "affiliateLink": "https://amzn.to/best-friend-female-1",
-            "description": "Custom photo book of your memories together"
+            "reviews": 156,
+            "brand": "MemoryCraft",
+            "availability": "in-stock",
+            "image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=300&fit=crop",
+            "images": [
+                "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=600&h=400&fit=crop"
+            ],
+            "youtubeVideo": "",
+            "affiliateLink": "https://amzn.to/best-friend-female-3",
+            "description": "Custom photo book of your memories together. Perfect keepsake for best friends.",
+            "features": [
+                "High-quality photo printing",
+                "Custom layout design",
+                "Hardcover binding",
+                "Up to 50 photos",
+                "Personalized cover design"
+            ],
+            "delivery": {
+                "time": "5-7 business days",
+                "freeDeliveryThreshold": 299,
+                "expressDelivery": "Available for ₹149"
+            },
+            "returns": {
+                "policy": "30 days return policy",
+                "conditions": "Customization changes only"
+            },
+            "warranty": {
+                "duration": "Quality guarantee",
+                "type": "Print quality assurance"
+            },
+            "support": {
+                "availability": "Business hours",
+                "contact": "support@memorycraft.com"
+            }
         },
         {
             "id": 4,
             "name": "Beauty Gift Set",
+            "title": "Beauty Gift Set",
             "price": 125,
             "originalPrice": 160,
             "category": "beauty",
             "rating": 4,
-            "image": "https://via.placeholder.com/300x300?text=Beauty+Gift+Set",
-            "affiliateLink": "https://amzn.to/best-friend-female-1",
-            "description": "Luxury beauty and skincare collection"
+            "reviews": 203,
+            "brand": "BeautyLux",
+            "availability": "in-stock",
+            "image": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&h=300&fit=crop",
+            "images": [
+                "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1596178060819-4e8aa92917d3?w=600&h=400&fit=crop"
+            ],
+            "youtubeVideo": "",
+            "affiliateLink": "https://amzn.to/best-friend-female-4",
+            "description": "Luxury beauty and skincare collection. Perfect for pampering your best friend.",
+            "features": [
+                "Premium skincare products",
+                "Luxury makeup items",
+                "Elegant gift packaging",
+                "Cruelty-free products",
+                "Suitable for all skin types"
+            ],
+            "delivery": {
+                "time": "2-3 business days",
+                "freeDeliveryThreshold": 499,
+                "expressDelivery": "Available for ₹99"
+            },
+            "returns": {
+                "policy": "7 days return policy",
+                "conditions": "Unopened products only"
+            },
+            "warranty": {
+                "duration": "Product guarantee",
+                "type": "Quality assurance"
+            },
+            "support": {
+                "availability": "24/7 customer service",
+                "contact": "support@beautylux.com"
+            }
         },
         {
             "id": 5,
             "name": "Wine Tasting Experience",
+            "title": "Wine Tasting Experience",
             "price": 149,
             "originalPrice": 199,
             "category": "experiences",
             "rating": 5,
-            "image": "https://via.placeholder.com/300x300?text=Wine+Tasting",
-            "affiliateLink": "https://amzn.to/best-friend-female-1",
-            "description": "Fun wine tasting experience for two"
+            "reviews": 87,
+            "brand": "WineExperience",
+            "availability": "in-stock",
+            "image": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=400&h=300&fit=crop",
+            "images": [
+                "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop"
+            ],
+            "youtubeVideo": "",
+            "affiliateLink": "https://amzn.to/best-friend-female-5",
+            "description": "Fun wine tasting experience for two. Perfect for celebrating friendship with your bestie.",
+            "features": [
+                "Professional wine tasting",
+                "Expert sommelier guidance",
+                "Premium wine selection",
+                "Cheese pairing included",
+                "2-hour experience"
+            ],
+            "delivery": {
+                "time": "Instant booking",
+                "freeDeliveryThreshold": 0,
+                "expressDelivery": "Not applicable"
+            },
+            "returns": {
+                "policy": "Booking modification only",
+                "conditions": "24 hours advance notice"
+            },
+            "warranty": {
+                "duration": "Experience guarantee",
+                "type": "Service quality"
+            },
+            "support": {
+                "availability": "24/7 customer service",
+                "contact": "support@wineexperience.com"
+            }
         },
         {
             "id": 6,
             "name": "Fashion Accessories",
+            "title": "Fashion Accessories",
             "price": 75,
             "originalPrice": 95,
             "category": "fashion",
             "rating": 4,
-            "image": "https://via.placeholder.com/300x300?text=Fashion+Accessories",
-            "affiliateLink": "https://amzn.to/best-friend-female-1",
-            "description": "Trendy fashion accessories and bags"
+            "reviews": 142,
+            "brand": "FashionTrend",
+            "availability": "in-stock",
+            "image": "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=400&h=300&fit=crop",
+            "images": [
+                "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=600&h=400&fit=crop"
+            ],
+            "youtubeVideo": "",
+            "affiliateLink": "https://amzn.to/best-friend-female-6",
+            "description": "Trendy fashion accessories and bags. Perfect for the fashion-forward best friend.",
+            "features": [
+                "Trendy handbag collection",
+                "Matching accessories set",
+                "High-quality materials",
+                "Latest fashion trends",
+                "Perfect for any occasion"
+            ],
+            "delivery": {
+                "time": "2-3 business days",
+                "freeDeliveryThreshold": 499,
+                "expressDelivery": "Available for ₹99"
+            },
+            "returns": {
+                "policy": "7 days return policy",
+                "conditions": "Original packaging required"
+            },
+            "warranty": {
+                "duration": "1 year manufacturer warranty",
+                "type": "Replacement warranty"
+            },
+            "support": {
+                "availability": "24/7 customer service",
+                "contact": "support@fashiontrend.com"
+            }
         },
         {
             "id": 7,
             "name": "Cooking Class",
+            "title": "Cooking Class",
             "price": 199,
             "originalPrice": 250,
             "category": "experiences",
             "rating": 5,
-            "image": "https://via.placeholder.com/300x300?text=Cooking+Class",
-            "affiliateLink": "https://amzn.to/best-friend-female-1",
-            "description": "Fun cooking class experience together"
+            "reviews": 94,
+            "brand": "CulinaryCraft",
+            "availability": "in-stock",
+            "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop",
+            "images": [
+                "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=600&h=400&fit=crop"
+            ],
+            "youtubeVideo": "",
+            "affiliateLink": "https://amzn.to/best-friend-female-7",
+            "description": "Fun cooking class experience together. Learn new recipes and create delicious memories.",
+            "features": [
+                "Professional chef instruction",
+                "Hands-on cooking experience",
+                "Recipe cards included",
+                "All ingredients provided",
+                "3-hour class duration"
+            ],
+            "delivery": {
+                "time": "Instant booking",
+                "freeDeliveryThreshold": 0,
+                "expressDelivery": "Not applicable"
+            },
+            "returns": {
+                "policy": "Booking modification only",
+                "conditions": "48 hours advance notice"
+            },
+            "warranty": {
+                "duration": "Experience guarantee",
+                "type": "Service quality"
+            },
+            "support": {
+                "availability": "24/7 customer service",
+                "contact": "support@culinarycraft.com"
+            }
         },
         {
             "id": 8,
             "name": "Perfume Collection",
+            "title": "Perfume Collection",
             "price": 149,
             "originalPrice": 199,
             "category": "perfume",
             "rating": 4,
-            "image": "https://via.placeholder.com/300x300?text=Perfume+Collection",
-            "affiliateLink": "https://amzn.to/best-friend-female-1",
-            "description": "Beautiful perfume gift set"
+            "reviews": 178,
+            "brand": "FragranceLux",
+            "availability": "in-stock",
+            "image": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=300&fit=crop",
+            "images": [
+                "https://images.unsplash.com/photo-1541643600914-78b084683601?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=600&h=400&fit=crop"
+            ],
+            "youtubeVideo": "",
+            "affiliateLink": "https://amzn.to/best-friend-female-8",
+            "description": "Beautiful perfume gift set. Elegant fragrances perfect for any occasion.",
+            "features": [
+                "Premium fragrance collection",
+                "Elegant gift packaging",
+                "Long-lasting scent",
+                "Suitable for all occasions",
+                "Luxury brand selection"
+            ],
+            "delivery": {
+                "time": "2-3 business days",
+                "freeDeliveryThreshold": 499,
+                "expressDelivery": "Available for ₹99"
+            },
+            "returns": {
+                "policy": "7 days return policy",
+                "conditions": "Unopened products only"
+            },
+            "warranty": {
+                "duration": "Product guarantee",
+                "type": "Quality assurance"
+            },
+            "support": {
+                "availability": "24/7 customer service",
+                "contact": "support@fragrancelux.com"
+            }
         }
     ]
 }

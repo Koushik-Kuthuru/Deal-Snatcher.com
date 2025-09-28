@@ -1,0 +1,37 @@
+{
+    "id": 17,
+    "name": "New App/Website Name",
+    "type": "app",
+    "logo": "https://via.placeholder.com/150x150/COLOR/FFFFFF?text=LOGO",
+    "description": "Brief description of what this earn does and how users can benefit from it.",
+    "rating": 4.5,
+    "reviews": 1000000,
+    "reward": 100,
+    "platform": "Android & iOS",
+    "payment": "UPI, Cards, Wallet",
+    "minimum": 100,
+    "support": "24/7 Support",
+    "referralCode": "YOURCODE123",
+    "downloadLink": "https://your-app-download-link.com",
+    "features": [
+        "Feature 1",
+        "Feature 2",
+        "Feature 3",
+        "Feature 4",
+        "Feature 5"
+    ],
+    "earningSteps": [
+        "Step 1: Sign up using our referral link",
+        "Step 2: Complete verification process",
+        "Step 3: Make your first transaction",
+        "Step 4: Complete required actions",
+        "Step 5: Receive your reward"
+    ],
+    "terms": [
+        "Valid for new users only",
+        "Minimum transaction amount required",
+        "Reward credited within specified time",
+        "One reward per user",
+        "Subject to terms and conditions"
+    ]
+}
